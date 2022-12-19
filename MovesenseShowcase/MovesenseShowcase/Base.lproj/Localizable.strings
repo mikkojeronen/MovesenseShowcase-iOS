@@ -1,0 +1,290 @@
+/*
+  Localizable.strings
+  MovesenseShowcase
+
+  Copyright © 2018 Suunto. All rights reserved.
+*/
+
+"DASHBOARD_TAB_TITLE" = "Dashboard";
+"SENSORS_TAB_TITLE" = "Sensors";
+"RECORD_TAB_TITLE" = "Record";
+"RECORDINGS_TAB_TITLE" = "Recordings";
+"MORE_TAB_TITLE" = "More";
+
+"ONBOARDING_NAV_TITLE" = "Onboarding";
+"ONBOARDING_BUTTON_SKIP" = "skip";
+"ONBOARDING_BUTTON_CONTINUE" = "continue";
+"ONBOARDING_BUTTON_CONNECT_A_SENSOR" = "Connect a Sensor";
+"ONBOARDING_BUTTON_START_TESTING" = "Start Testing";
+"ONBOARDING_PLEASE_WAIT_CONNECTING" = "Please wait,\nconnecting may take 10-30\nseconds..";
+"ONBOARDING_CONNECTING_TO_SENSOR" = "Connecting to sensor\n%@...";
+"ONBOARDING_SENSOR_CONNECTED" = "Sensor %@\nis connected!";
+"ONBOARDING_INTRO_1_TITLE" = "Welcome!";
+"ONBOARDING_INTRO_1_DESC" = "Movesense is an open and programmable development environment for sensing solutions, capable of measuring motion, heart rate, temperature and more. ";
+"ONBOARDING_INTRO_2_TITLE" = "Connect Your Sensors";
+"ONBOARDING_INTRO_2_DESC" = "With the tiny, durable, water resistant motion sensor you can track anything that moves. Connect one or multiple sensors at a time.";
+"ONBOARDING_INTRO_3_TITLE" = "View and Record Data";
+"ONBOARDING_INTRO_3_DESC" = "Stream data from the sensors to your phone and record your data for further analyzing.";
+"ONBOARDING_INTRO_4_TITLE" = "Make It Your Own";
+"ONBOARDING_INTRO_4_DESC" = "Develop your own app in the sensor to make it work exactly as you need. With our innovative tools you can build your own wearables.";
+
+"CONNECT_SEARCH_PLACEHOLDER_TITLE" = "Search";
+"CONNECT_SENSOR" = "Connect Sensor";
+"CONNECT_SENSOR_SERIAL_NOT_AVAILABLE" = "serial n/a";
+"CONNECT_AVAILABLE_SENSOR_DEVICES" = "Available Sensor Devices";
+"CONNECT_INFO_BATTERY_LABEL" = "Battery ";
+"CONNECT_INFO_APP_NAME_LABEL" = "App Name: ";
+"CONNECT_INFO_APP_VERSION_LABEL" = "App Version: ";
+"CONNECT_INFO_CORE_VERSION_LABEL" = "Core Version: ";
+
+"DASHBOARD_NAV_TITLE" = "Dashboard";
+"DASHBOARD_NO_SENSORS_TITLE" = "Connect a sensor to view and record data";
+"DASHBOARD_WELCOME_BACK_BUTTON_TITLE" = "Connect a sensor";
+"DASHBOARD_WELCOME_BACK_DISMISS_TITLE" = "Close";
+"DASHBOARD_WELCOME_BACK_TITLE" = "Welcome back to Movesense!";
+"DASHBOARD_WELCOME_BACK_TEXT" = "Connect a sensor to view and record data.\n\nIf you want to view and share your recorded data, you can find it in Recordings.";
+
+"DASHBOARD_SELECTOR_DPS_NAME" = "DPS Range";
+"DASHBOARD_SELECTOR_DPS_UNIT" = "DPS";
+
+"SENSORS_NAV_TITLE" = "Sensors";
+"SENSORS_NO_SENSORS_TITLE" = "No sensor device connected";
+"SENSORS_CONNECT_BUTTON_TITLE" = "Connect a sensor";
+"SENSORS_ENERGY_TITLE" = "Battery";
+"SENSORS_ENERGY_WARNING" = "Change battery soon";
+"SENSORS_ACTION_CONNECT" = "Connect this sensor";
+"SENSORS_ACTION_CANCEL" = "Cancel";
+"SENSORS_ACTION_DISCONNECT" = "Disconnect";
+"SENSORS_ACTION_DFU" = "Device Firmware Upgrade";
+"SENSORS_ACTION_CONFIRMATION_TITLE" = "Yes";
+"SENSORS_ACTION_CANCEL_TITLE" = "Cancel";
+"SENSORS_ACTION_DISCONNECT_CONFIRMATION_TITLE" = "Disconnect sensor\n";
+"SENSORS_ACTION_FORGET_CONFIRMATION_TITLE" = "Forget sensor\n";
+"SENSORS_SENSOR_INFO_TITLE" = "Sensor info";
+
+"SENSOR_INFO_APP_NAME_TITLE" = "App name: ";
+"SENSOR_INFO_APP_VERSION_TITLE" = "App version: ";
+"SENSOR_INFO_CORE_VERSION_TITLE" = "Core version: ";
+
+"MORE_NAV_TITLE" = "More";
+"MORE_GENERAL_TITLE" = "General";
+
+"DFU_NAV_TITLE" = "Device Firmware Update";
+"DFU_CURRENT_FIRMWARE_TITLE" = "Current Firmware";
+"DFU_FIRMWARE_TITLE" = "Update Firmware";
+"DFU_APP_NAME_TITLE" = "App name:";
+"DFU_APP_VERSION_TITLE" = "App version:";
+"DFU_CORE_VERSION_TITLE" = "Core version:";
+"DFU_UPDATE_FIRMWARE_TITLE" = "Select firmware";
+"DFU_RESET_TITLE" = "Reset to Movesense default";
+"DFU_INSTRUCTIONS_TITLE" = "Instructions";
+"DFU_INSTRUCTIONS_HOWTO_TITLE" = "How to upload a firmware file";
+"DFU_SELECT_TITLE" = "Select Firmware";
+"DFU_SELECT_ACTION_TITLE" = "Select Firmware";
+"DFU_RESET_CONFIRMATION_TITLE" = "Reset firmware to default?";
+"DFU_RESET_CONFIRMATION_TEXT" = "This action will override your current firmware settings.";
+"DFU_RESET_BUTTON_TITLE" = "Reset Firmware";
+"DFU_RESET_CANCEL_TITLE" = "Cancel";
+"DFU_RECONNECT_TITLE" = "Reconnecting..";
+
+"DFU_SELECT_UPLOADED_FILES_TITLE" = "Uploaded files";
+"DFU_SELECT_PLACEHOLDER_TITLE" = "There are no files in this library.";
+
+"DFU_TARG_NAV_TITLE" = "Available DFU Targets";
+"DFU_TARG_UPDATE_FIRMWARE_TITLE" = "Update Selected Target";
+"DFU_TARG_PLACEHOLDER_TITLE" = "Searching for available DFU targets..";
+
+"DFU_RECOVERY_NAV_TITLE" = "DFU Recovery";
+"DFU_RECOVERY_RECOVER_SENSOR_TITLE" = "Recover Sensor";
+"DFU_RECOVERY_SELECT_FIRMWARE_TITLE" = "Select firmware";
+
+"DFU_HOWTO_NAV_TITLE" = "How to upload a firmware file";
+"DFU_HOWTO_ADDING_FILES_TITLE" = "Add Files From Email";
+"DFU_HOWTO_STEP_1" = "<body style='font-family:-apple-system;font-size:16px'><b>1. </b>Locate your firmware ZIP file attachment from your email. Tap or long press the file and a dialog box will open.</body>";
+"DFU_HOWTO_STEP_2" = "<body style='font-family:-apple-system;font-size:16px'><b>2. </b>Choose \“Save to Files\” from the dialog box. Select \“On My iPhone\” and \“Movesense\” folder location.</body>";
+"DFU_HOWTO_STEP_3" = "<body style='font-family:-apple-system;font-size:16px'><b>3. </b>Open Movesense app. Select the sensor you want to update from Sensors list, go to \“Device Firmware update\” and \“Select Firmware\”.</body>";
+"DFU_HOWTO_STEP_4" = "<body style='font-family:-apple-system;font-size:16px'><b>4. </b>Your firmware file is now visible in the \“Uploaded files\” list view. Select your file and tap \“Select Firmware\”.</body>";
+"DFU_HOWTO_STEP_5" = "<body style='font-family:-apple-system;font-size:16px'><b>5. </b>Confirm the sensor location by choosing \“Available DFU Target\” on the list. Your sensor will go to DFU mode and red light is on. Tap \“Update Selected Target\” to start the update.</body>";
+"DFU_HOWTO_STEP_6" = "<body style='font-family:-apple-system;font-size:16px'><b>6. </b>Updating can take several minutes. When the update is ready the red light will turn off and the sensor will be reconnected to the application. You can view the sensor firmware details under \“Sensor info\”.</body>";
+"DFU_HOWTO_STEP_7" = "<body style='font-family:-apple-system;font-size:16px'><b>7. </b>If you wish to reset the sensor back to factory settings, you can do it easily by selecting \“Reset to Movesense default\” on the \“Device firmware update\” page.</body>";
+"DFU_HOWTO_FAQ_LABEL" = "<body style='font-family:-apple-system;font-size:16px;text-align:center'>Got any questions?<br>Check out our <a href='applink:faq'>FAQ</a> for troubleshooting.</body>";
+
+"DFU_PROGRESS_UPDATING_TITLE" = "Updating..";
+"DFU_PROGRESS_ALL_DONE_TITLE" = "All done!";
+"DFU_PROGRESS_PART_TITLE" = "Part: ";
+"DFU_PROGRESS_SPEED_TITLE" = "Upload speed: ";
+
+"RECORD_NAV_TITLE" = "Record";
+"RECORD_START_TITLE" = "Start";
+"RECORD_STOP_TITLE" = "Stop";
+"RECORD_NOTHING_TITLE" = "Nothing to record";
+
+"RECORDINGS_NAV_TITLE" = "Recordings";
+"RECORDINGS_NAV_SELECT" = "Select";
+"RECORDINGS_NAV_CANCEL" = "Cancel";
+"RECORDINGS_CONVERT_PROGRESS_UPDATING_TITLE" = "Converting..";
+"RECORDINGS_CONVERT_PROGRESS_PART_TITLE" = "Part: ";
+"RECORDINGS_CONVERT_PROGRESS_ALL_DONE_TITLE" = "All done!";
+"RECORDINGS_CONVERT_CSV_TITLE" = "CSV Conversion";
+"RECORDINGS_PLACEHOLDER_TITLE" = "There are no recorded data logs.";
+"RECORDINGS_DETAILS_SENSOR_TITLE" = "Sensor:";
+"RECORDINGS_DETAILS_DATE_TITLE" = "Date:";
+"RECORDINGS_DETAILS_TIME_TITLE" = "Time:";
+"RECORDINGS_DETAILS_DURATION_TITLE" = "Duration:";
+
+"APP_INFO_NAV_TITLE" = "App Info";
+"APP_INFO_APP_NAME_TITLE" = "Movesense Showcase";
+"APP_INFO_APP_COMPANY_TITLE" = "© Suunto Oy 2019";
+"APP_INFO_APP_COMPATIBILITY_TITLE" = "Compatible with iPhone 5S or later models, requires iOS 11 or later software.";
+"APP_INFO_APP_VERSION" = "Version: ";
+"APP_INFO_APP_UPDATED" = "Updated: ";
+"APP_INFO_CHECK_UPDATES_BUTTON_TITLE" = "Check for updates";
+
+"ABOUT_NAV_TITLE" = "About Movesense";
+"ABOUT_TEXT_HTML" =
+"<body style='font-family:-apple-system;font-size:16px;font-weight:lighter;line-height:20px'>
+<p>Movesense is an open development environment for quick and cost-effective creation of motion measurement and other wearable & attachable sensor solutions. It is developed, manufactured and tested by the Finnish sports watch expert Suunto and is suitable for a large variety of use cases in sports, wellbeing, research, and more. It can be applied for both recreational and professional use.</p>
+<p>Shop Movesense devices <a href='https://www.movesense.com/shop'>here</a>.</p>
+</body>";
+
+"FAQ_NAV_TITLE" = "FAQ";
+"FAQ_TEXT_HTML" =
+"<body style='font-family:-apple-system;font-size:12px'>
+<h3>1. Updating Sensor Firmware</h3>
+ <p><a href='applink:dfuUpdate'>See DFU updating instructions here</a></p>
+
+ <p>DFU file format requirements: DFU ZIP package generated by a ninja build tool.</p>
+
+ <h3>2. Recovering from a Failed Sensor Update</h3>
+ <p>There are two ways to recover from a failed sensor update:</p>
+
+ <ol>
+     <li>If the red LED light is still constantly lit (sensor is still in DFU mode), navigate to “More” and select “DFU
+         recovery”.
+     </li>
+     <li>If the sensor is not in DFU mode (LED light is not on), you can manually set the sensor to DFU mode by removing
+         the battery. Then insert the battery while pressing the studs with your finger and keeping them short circuited.
+         Remove the finger when LED starts blinking and sensor will end up in DFU mode (LED is constantly lit).
+     </li>
+ </ol>
+ <br>
+ <h3>3. Detecting Bluetooth Bandwidth Issues</h3>
+ <p>The Bluetooth bandwidth varies a lot between phone models. If you are encountering any of the following issues with
+     the app:</p>
+ <ol>
+     <li>Losing some sensor connection(s) with multi-sensor use case</li>
+     <li>Losing data when subscribing higher sample rates or subscribing multiple APIs simultaneously.</li>
+ </ol>
+ <br>
+ <p>We strongly suggest to either have less sensors connected simultaneously of decrease the sample rate and/or amount of
+     simultaneous data subscriptions per sensor.</p>
+ <h3>4. Connecting Multiple Sensors</h3>
+ <p>Connect multiple sensors by adding them individually in the Sensors page. All previously connected sensors are shown
+     here. Connect them by tapping <strong>“Connect this sensor”</strong>. You can also connect a new sensor by selecting
+     <strong>“+”</strong> from top right corner.</p>
+ <p><strong><u>Please note</u></strong>, that the capabilities of connecting multiple sensors depend highly on your phone
+     model and the data you are viewing and recording. Try it out freely and remember to give us feedback!</p>
+
+ <h3>5. Data Log Formats</h3>
+ <p>Supported data log formats are <strong>CSV</strong> and <strong>JSON</strong>. They can be easily exported and visualized with your favourite tools for
+     analyzing.</p>
+ <p>Timestamp format in recording is milliseconds since last reset of Movesense sensor.</p>
+
+ <h3>6. Data Missing from a Recorded File</h3>
+ <p>You might be encountering some issues with the data bandwidth. Please check the answer to <strong>“3. Detecting Bluetooth Bandwidth Issues”</strong>. Other option is to try to replace the battery with a full one.</p>
+
+ <h3>7. Technical Information of the Sensor</h3>
+ <p><a href='https://www.movesense.com/wp-content/uploads/2017/11/Movesense-Sensor-Datasheet-_-20171109.pdf'>Download
+     the sensor spec sheet</a></p>
+ <p>The spec sheet includes all the important information e.g. sensors, software and patents.</p>
+
+ <h3>8. Replacing the Battery in Sensor</h3>
+ <p>Open the battery compartment cover using a coin as a tool. Remove the old battery and recycle it according to the
+     local legislation. Insert a fresh CR2025 lithium coin cell battery into the battery compartment cover and then press
+     the sensor on the battery cover. Firmly close the battery cover. Make sure that the O-ring is in correct position in
+     the groove on the battery cover before closing the battery cover.</p>
+
+ <h3>9. What to Do When iPhone Disk Is Full</h3>
+ <p>Go to <strong>Settings → General → iPhone Storage</strong> to check what takes up storage on your phone. Tap each app to see how it
+     uses storage. If Movesense app is filling your phone with recorded data, go to <strong>Recordings → Select → Share</strong> to export
+     your logs. After exporting your logs, delete them to free up disk space.</p>
+
+ <h3>10. Need Help in Developing a Product with Movesense?</h3>
+ <p>Check out our list resources and documentation for development <a href='https://www.movesense.com/developers/resources/'>here</a>.</p>
+ <p>If you don’t have the right team to build your concept in-house, <a href='mailto:info@movesense.com'>contact us</a> and we’ll help you get started. You can
+     also directly connect with one of our <a href='https://www.movesense.com/partner/'>development partners</a> who are experienced with the Movesense environment.</p>
+     </body>";
+
+"TERMS_OF_SERVICE_NAV_TITLE" = "Terms of Service";
+"TERMS_OF_SERVICE_BUTTON_ACCEPT" = "I Accept";
+"TERMS_OF_SERVICE_BUTTON_READ_MORE" = "Read More";
+"TERMS_OF_SERVICE_TEXT_HTML" =
+"<body style='font-family:-apple-system;font-size:12px'>
+ <h3><b>TERMS AND CONDITIONS FOR THE MOVESENSE SHOWCASE APPLICATION</b></h3>
+ <p>THE LICENSED TECHNOLOGY IS MADE AVAILABLE BY SUUNTO OY ACTING THROUGH AMER SPORTS DIGITAL SERVICES OY (A LIMITED LIABILITY COMPANY INCORPORATED IN FINLAND, HAVING ITS REGISTERED ADDRESS AT VALIMOTIE 7, 01510 VANTAA, FINLAND, HEREINAFTER “AMER SPORTS DIGITAL”) TO BE DOWNLOADED AND INSTALLED ON A MOBILE DEVICE AND USED ONLY UNDER THESE TERMS AND CONDITIONS (HEREINAFTER “AGREEMENT”). BY DOWNLOADING, INSTALLING AND/OR USING THE LICENSED TECHNOLOGY YOU ACKNOWLEDGE AND AGREE THAT YOU, AND IF YOU DOWNLOAD, INSTALL AND/OR USE LICENSED TECHNOLOGY ON THE BEHALF OF ANY ORGANIZATION, ALSO THE ORGANIZATION ARE BOUND BY THESE TERMS. YOU HEREBY REPRESENT AND WARRANT THAT YOU ARE ENTITLED TO REPRESENT AND MAKE BINDING AGREEMENTS ON THE BEHALF OF SUCH ORGANIZATION.</p>
+ <p>The Licensed Technology includes open source software that is subject to the copyright and license terms of the said open source software. Such open source software and their license terms are listed separately at the end of this document and do not form a part of this Agreement.</p>
+ <p>In this Agreement, the following terms have the following meanings:</p>
+ <h3><b>1. DEFINITIONS</b></h3>
+ <p>&quot;<b>Confidential Information</b>&quot; means</p>
+ <ul>
+     <li>Licensed Technology;</li>
+     <li>any technical, business, and/or other information relating to the business of Amer Sports Digital, its affiliates, subcontractors or the collaboration hereunder, their facilities, products, techniques and processes; and</li>
+     <li>any other information disclosed by Amer Sports Digital or its affiliates to the Licensor.</li>
+ </ul>
+ <br>
+ <p>&quot;<b>Licensed Technology</b>&quot; means</p>
+ <p>the Movesense Showcase Application and all of its updates and changes, modifications, additions and alterations and any related documentation.</p>
+ <p>&quot;<b>Purpose</b>&quot; means</p>
+ <p>the Licensees’ internal use of the Licensed Technology only for non-commercial purposes solely in connection with Movesense sensors acquired by the Licensee from Amer Sports Digital under a separate agreement.</p>
+ <h3><b>2. LICENSE AND USE</b></h3>
+ <p>Subject to the terms and conditions of this Agreement Amer Sports Digital hereby grants to Licensee, and Licensee hereby accepts, a personal, non-transferrable, non-sub licensable, non-exclusive, worldwide, limited license to use the Licensed Technology strictly for the Purpose, in object code only.</p>
+ <h3><b>3. RESTRICTIONS</b></h3>
+ <p>Licensee shall have no right to disclose, sell, market, commercialise, sub-license, re-license or otherwise transfer to any other party whatsoever the Licensed Technology or any rights in the Licensed Technology.</p>
+ <p>In no event may Licensee copy, export, re-export, sub-license, rent, lease or use the Licensed Technology in any manner inconsistent with or not expressly permitted under this Agreement.</p>
+ <p>Licensee shall not use or disclose the Licensed Technology for any purpose other than the Purpose. In particular, the Licensee shall not incorporate or integrate the Licensed Technology or any part thereof in any products or services.</p>
+ <h3>4. OWNERSHIP<b></b></h3>
+ <p>The Licensed Technology and any confidential information of Amer Sports Digital, and all rights therein (including without limitation any intellectual property rights relating thereto), are owned solely by Amer Sports Digital. All Amer Sports Digital's trademarks, service marks, trade names, logos or other words or symbols are and will remain the exclusive property of Amer Sports Digital.</p>
+ <p>Except as otherwise expressly stated in this Agreement, no express or implied rights or licenses under Amer Sports Digital’s or its group companies patents, copy rights, trademarks, trade secrets or other intellectual property rights are granted to the Licensee.</p>
+ <h3><b>5. FEEDBACK</b></h3>
+ <p>The Licensee is not obliged to provide Amer Sports Digital with any feedback under this Agreement. To the extent the Licensee provides Amer Sports Digital with any feedback relating to the Licensed Technology (including without limitation comments, suggestions and information related to usability, performance, functions, bug reports and test results of the Licensed Technology), Amer Sports Digital shall receive a worldwide, non-exclusive, sub-licensable, irrevocable, royalty-free and perpetual license to use, modify, reproduce, sell, offer to sell, lease, import, export and otherwise dispose of and utilize such feedback in its own or group companies business. No compensation will be paid for the Licensee with respect to the feedback.</p>
+ <h3><b>6. TECHNICAL SUPPORT</b></h3>
+ <p>Amer Sports Digital has no obligation to furnish Licensee with any technical support whatsoever.</p>
+ <h3><b>7. NO WARRANTY</b></h3>
+ <p>THE LICENSED TECHNOLOGY IS PROVIDED &quot;AS IS&quot; WITHOUT WARRANTY OF ANY KIND EXPRESS OR IMPLIED AND NEITHER AMER SPORTS DIGITAL, ITS LICENSORS OR AFFILIATES NOR THE COPYRIGHT HOLDERS MAKE ANY REPRESENTATIONS OR WARRANTIES, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY OR FITNESS FOR A PARTICULAR PURPOSE OR THAT THE LICENSED TECHNOLOGY WILL NOT INFRINGE ANY THIRD PARTY PATENTS, COPYRIGHTS, TRADEMARKS OR OTHER RIGHTS. THERE IS NO WARRANTY BY AMER SPORTS DIGITAL OR BY ANY OTHER PARTY THAT THE FUNCTIONS, DESIGN, FEATURES OR SPECIFICATIONS CONTAINED IN THE LICENSED TECHNOLOGY WILL MEET THE REQUIREMENTS OF LICENSEE OR THAT THE OPERATION OF THE LICENSED TECHNOLOGY WILL BE UNINTERRUPTED OR ERROR-FREE. LICENSEE ASSUMES ALL RESPONSIBILITY AND RISK FOR THE SELECTION OF THE LICENSED TECHNOLOGY TO ACHIEVE LICENSEE'S INTENDED RESULTS AND FOR THE INSTALLATION, USE AND RESULTS OBTAINED FROM IT</p>
+ <h3><b>8. LIMITATION OF LIABILITY</b></h3>
+ <p>IN NO EVENT SHALL AMER SPORTS DIGITAL, ITS EMPLOYEES OR SUPPLIERS OR AFFILIATES BE LIABLE FOR ANY LOST PROFITS, REVENUE, SALES, DATA OR COSTS OF PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES, PROPERTY DAMAGE, PERSONAL INJURY, INTERRUPTION OF BUSINESS, LOSS OF BUSINESS INFORMATION OR FOR ANY SPECIAL, DIRECT, INDIRECT, INCIDENTAL, ECONOMIC, COVER, PUNITIVE, SPECIAL OR CONSEQUENTIAL DAMAGES, HOWEVER CAUSED AND WHETHER ARISING UNDER CONTRACT, TORT, NEGLIGENCE, OR OTHER THEORY OF LIABILITY ARISING OUT OF THE USE OF OR INABILITY TO USE THE LICENSED TECHNOLOGY, EVEN IF AMER SPORTS DIGITAL OR ITS EMPLOYEES OR SUPPLIERS OR AFFILIATES ARE ADVISED OF THE POSSIBILITY OF SUCH DAMAGES. BECAUSE SOME COUNTRIES/STATES/ JURISDICTIONS DO NOT ALLOW THE EXCLUSION OR LIMITATION OF LIABILITY, BUT MAY ALLOW LIABILITY TO BE LIMITED, IN SUCH CASES, AMER SPORTS DIGITAL, ITS EMPLOYEES OR LICENSORS OR AFFILIATES' LIABILITY SHALL BE LIMITED TO FIFTY (50) EURO.</p>
+ <h3><b>9. CONFIDENTIALITY</b></h3>
+ <p>Licensee acknowledges that the Confidential Information any/all copies thereof, translations and partial copies shall be considered as information of Amer Sports Digital and title thereto remains in Amer Sports Digital.</p>
+ <p>Licensee shall keep the Confidential Information strictly confidential and shall not disclose it to third parties without Amer Sports Digital’s prior written permission.</p>
+ <p>Confidential Information received hereunder shall not be used for any purpose other than the Purpose without Amer Sports Digital’s prior written permission. The Licensee shall restrict access to Confidential Information to only those of its employees to whom such access is necessary for carrying out the Purpose and advise such employees of the obligations assumed herein.</p>
+ <p>Neither Licensee, nor Licensee's employees shall sell, transfer, publicly disclose, display or otherwise make available to third parties any portion of the Licensed Technology or any other Confidential Information. Licensee agrees to secure and protect Confidential Information with the same degree of care that Licensee uses to secure and protect its own confidential and proprietary information of a similar nature, and to take all reasonably appropriate actions with its employees who are permitted access thereto, to satisfy its obligations hereunder.</p>
+ <p>Upon its discovery of any unauthorized possession, use or knowledge of the Licensed Technology arising out of Licensee's possession of the Licensed Technology, Licensee shall promptly notify Amer Sports Digital of the same and shall cooperate with Amer Sports Digital in every reasonable effort to regain possession or prevent further unauthorized use of the Licensed Technology.</p>
+ <p>Notwithstanding anything in this Section, neither Party shall be obligated to maintain in confidence any information of the other Party which: (i) is in the public domain at the time of disclosure or later becomes part of the public domain through no fault of Licensee; or (ii) was known to Licensee prior to disclosure by Amer Sports Digital as proven by the written records of Licensee; or (iii) is disclosed to Licensee by a third party who did not obtain such Information, directly or indirectly, from Amer Sports Digital; or (iv) was independently developed (by personnel having no access to the Confidential Information) by Licensee as proven by the written records of Licensee.</p>
+ <h3><b>10. GENERAL</b></h3>
+ <h4>10.1. Entire Agreement</h4>
+ <p>This Agreement is the entire agreement between the Parties relating to the Licensed Technology and supersedes any prior representations, communications, undertakings, or discussions relating to the Licensed Technology.</p>
+ <h4>10.2. Governing Law and Arbitration</h4>
+ <p>This Agreement shall be construed and interpreted in accordance with the laws of Finland, excluding its rules for choice of law. Any disputes relating to or arising in connection with this Agreement shall be finally settled in arbitration. The arbitrator is to be appointed by the Arbitration Committee of the Central Chamber of Commerce of Finland and the rules of the said Committee are to be followed in the arbitration. The award shall be final and binding and enforceable in any court of competent jurisdiction.</p>
+ <h4>10.3. No Commitment</h4>
+ <p>The Licensee understands that nothing herein requires Amer Sports Digital to proceed with any transaction or relationship or agreement. The Licensee further agree and acknowledge that Amer Sports Digital may now market or have under development products and/or services which are competitive with ideas, products and/or services now offered or which may be offered by Licensee, and that subject to the terms and conditions of this Agreement, discussions or communications between the Parties will not prevent the right of Amer Sports Digital by itself or through any third party to develop, make, use, procure and/or market products or services now or in the future which may be competitive with those developed by the Licensee under this Agreement.</p>
+ <h4>10.4. Waiver</h4>
+ <p>The failure of either Party to enforce any provision of this Agreement shall not be deemed a waiver of that or any other provision of this Agreement.</p>
+ <h4>10.5. Severability</h4>
+ <p>If any provision contained in this Agreement is determined to be invalid or unenforceable, in whole or in part, the remaining provisions and any partially enforceable provision will, nevertheless, be binding and enforceable, and the Parties agree to substitute for the invalid provision a valid provision which most closely approximates the intent and economic effect of the invalid provision.</p>
+ <h4>10.6. Export Control</h4>
+ <p>Licensee shall follow all export control laws and regulations relating to the Licensed Technology.</p>
+ <h3><b>OPEN SOURCE SOFTWARE</b></h3>
+ <p>The Movesense Showcase Application contains the following open source software that is subject to the copyright and terms and conditions stated below:</p>
+ <p><b>ZIP Foundation, Copyright (c) 2017 Thomas Zoechling</b></p>
+ <p>MIT license </p>
+ <p>Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the &quot;Software&quot;), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions: </p>
+ <p>The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.</p>
+ <p>THE SOFTWARE IS PROVIDED &quot;AS IS&quot;, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.</p>
+ <p><b>iOSDFULibrary, Copyright (c) 2016, Nordic Semiconductor All rights reserved.</b></p>
+ <p>BSD 3-Clause License</p>
+ <p>Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:</p>
+ <p>Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer.</p>
+ <p>Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution.</p>
+ <p>Neither the name of the copyright holder nor the names of its contributors may be used to endorse or promote products derived from this software without specific prior written permission.</p>
+ <p>THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS &quot;AS IS&quot; AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.</p>
+ </body>";

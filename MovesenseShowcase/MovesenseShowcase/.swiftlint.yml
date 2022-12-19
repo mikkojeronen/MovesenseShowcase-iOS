@@ -1,0 +1,34 @@
+disabled_rules:
+  - todo
+
+excluded:
+  - MovesenseShowcaseTests
+  - Pods
+
+line_length: 130
+
+identifier_name:
+  excluded:
+    - x
+    - y
+    - z
+    - hr
+    - ok
+    - i
+    - dx
+
+function_parameter_count:
+  - 6
+  - 7
+
+function_body_length:
+  - 300
+  - 500
+
+type_body_length:
+  - 300
+  - 500
+
+file_length:
+  - 500
+  - 1200
