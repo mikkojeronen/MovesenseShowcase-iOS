@@ -7,13 +7,13 @@
 
 import CoreBluetooth
 
-protocol MovesenseBleControllerDelegate: class {
+protocol MovesenseBleControllerDelegate: AnyObject {
 
     func deviceFound(uuid: UUID, localName: String,
                      serialNumber: String, rssi: Int)
 }
 
-protocol MovesenseBleController: class {
+protocol MovesenseBleController: AnyObject {
 
     var delegate: MovesenseBleControllerDelegate? { get set }
 

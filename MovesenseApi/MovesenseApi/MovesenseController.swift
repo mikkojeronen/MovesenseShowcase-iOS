@@ -7,7 +7,7 @@
 
 import Foundation
 
-protocol MovesenseControllerDelegate: class {
+protocol MovesenseControllerDelegate: AnyObject {
 
     func deviceDiscovered(_ device: MovesenseDeviceConcrete)
 

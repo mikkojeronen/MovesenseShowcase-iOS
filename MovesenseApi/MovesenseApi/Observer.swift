@@ -9,7 +9,7 @@ import Foundation
 
 public protocol ObserverEvent {}
 
-public protocol Observer: class {
+public protocol Observer: AnyObject {
 
     func handleEvent(_ event: ObserverEvent)
 }
@@ -26,7 +26,7 @@ public struct Observation {
     weak var observer: Observer?
 }
 
-public protocol Observable: class {
+public protocol Observable: AnyObject {
 
     var observations: [Observation] { get set }
     var observationQueue: DispatchQueue { get }

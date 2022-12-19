@@ -7,7 +7,7 @@
 
 import Foundation
 
-protocol MovesenseConnectionDelegate: class {
+protocol MovesenseConnectionDelegate: AnyObject {
 
     func onConnectionError(_ error: Error)
 }
