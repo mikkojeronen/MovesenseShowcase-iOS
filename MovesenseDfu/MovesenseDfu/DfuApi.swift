@@ -43,7 +43,7 @@ internal final class DfuApi: MovesenseDfuApi {
         }
 
         let packages: [MovesenseDfuPackage] = bundleUrls
-            .compactMap { DFUFirmware(urlToZipFile: $0) }
+            .compactMap { try? DFUFirmware(urlToZipFile: $0) }
             .compactMap { DfuPackage(dfuFirmware: $0, dfuType: .bundledDfu) }
 
         return packages
@@ -63,7 +63,7 @@ internal final class DfuApi: MovesenseDfuApi {
 
         let packages: [MovesenseDfuPackage] = enumerator.compactMap { $0 as? String }
             .filter { $0.hasSuffix(Constants.packageSuffix) }
-            .compactMap { DFUFirmware(urlToZipFile: URL(fileURLWithPath: packagePath + "/" + $0)) }
+            .compactMap { try? DFUFirmware(urlToZipFile: URL(fileURLWithPath: packagePath + "/" + $0)) }
             .compactMap { DfuPackage(dfuFirmware: $0, dfuType: .addedDfu) }
 
         return packages

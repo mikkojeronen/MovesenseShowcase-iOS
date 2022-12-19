@@ -199,7 +199,7 @@ internal final class DfuStateUpdate: DfuState {
 
     init?(_ stateMachine: DfuStateMachine) {
         guard let fileUrl = stateMachine.dfuPackage?.fileUrl,
-              let firmware = DFUFirmware(urlToZipFile: fileUrl) else {
+              let firmware = try? DFUFirmware(urlToZipFile: fileUrl) else {
 
             let dfuError = MovesenseDfuError.updateError("Invalid firmware.")
             stateMachine.newState(DfuStateError(stateMachine, error: dfuError))
