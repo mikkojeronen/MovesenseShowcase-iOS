@@ -9,7 +9,7 @@ import CoreBluetooth
 import Foundation
 import iOSDFULibrary
 
-internal protocol DfuState: class {
+internal protocol DfuState: AnyObject {
 
     var stateType: MovesenseDfuState { get }
 

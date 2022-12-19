@@ -84,7 +84,7 @@ public enum MovesenseDfuError: Error {
     }
 }
 
-public protocol MovesenseDfuApiDelegate: class {
+public protocol MovesenseDfuApiDelegate: AnyObject {
 
     func movesenseDfuApiStateChanged(_ api: MovesenseDfuApi, state: MovesenseDfuState)
 
@@ -96,7 +96,7 @@ public protocol MovesenseDfuApiDelegate: class {
     func movesenseDfuApiOnError(_ api: MovesenseDfuApi, error: MovesenseDfuError)
 }
 
-public protocol MovesenseDfuApi: class {
+public protocol MovesenseDfuApi: AnyObject {
 
     var delegate: MovesenseDfuApiDelegate? { get set }
 

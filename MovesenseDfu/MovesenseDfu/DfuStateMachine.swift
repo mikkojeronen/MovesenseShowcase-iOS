@@ -13,7 +13,7 @@ internal enum Constants {
     static let dfuUuid: CBUUID = CBUUID(string: "FE59")
 }
 
-internal protocol DfuStateMachineDelegate: class {
+internal protocol DfuStateMachineDelegate: AnyObject {
 
     func stateChanged(_ state: MovesenseDfuState)
 
