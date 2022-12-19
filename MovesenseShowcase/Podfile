@@ -5,6 +5,9 @@ target 'MovesenseShowcase' do
   # Comment the next line if you're not using Swift and don't want to use dynamic frameworks
   use_frameworks!
 
+  # Remote Movesense pod via git
+  pod 'Movesense', :git => 'https://bitbucket.org/movesense/movesense-mobile-lib.git', :branch => 'master'
+
   # Local DFU pod via git
   pod 'MovesenseDfu', :git => '..', :branch => 'main'
 
@@ -16,6 +19,9 @@ end
 target 'MovesenseShowcaseTests' do
   # Comment the next line if you're not using Swift and don't want to use dynamic frameworks
   use_frameworks!
+
+  # Remote Movesense pod via git
+  pod 'Movesense', :git => 'https://bitbucket.org/movesense/movesense-mobile-lib.git', :branch => 'master'
 
   # Local DFU pod via git
   pod 'MovesenseDfu', :git => '..', :branch => 'main'

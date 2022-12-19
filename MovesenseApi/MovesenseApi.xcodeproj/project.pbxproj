@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5426A3042951128B00AD2013 /* Movesense.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5426A3032951128B00AD2013 /* Movesense.swift */; };
+		5426A3052951128B00AD2013 /* Movesense.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5426A3032951128B00AD2013 /* Movesense.swift */; };
 		C12F1C4E22B23711009FC1F8 /* MovesenseBleControllerMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = C12F1C4B22B23710009FC1F8 /* MovesenseBleControllerMock.swift */; };
 		C12F1C5022B246E6009FC1F8 /* MovesenseApiConcrete.swift in Sources */ = {isa = PBXBuildFile; fileRef = C12F1C4F22B246E6009FC1F8 /* MovesenseApiConcrete.swift */; };
 		C12F1C5222B24793009FC1F8 /* MovesenseTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = C12F1C5122B24793009FC1F8 /* MovesenseTypes.swift */; };
@@ -27,9 +29,6 @@
 		C136A61D22AFE7E100163139 /* Collection+subscript.swift in Sources */ = {isa = PBXBuildFile; fileRef = C136A61C22AFE7E100163139 /* Collection+subscript.swift */; };
 		C15D579A22AFD8DC00DDCFF2 /* MovesenseApiTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C15D579922AFD8DC00DDCFF2 /* MovesenseApiTests.swift */; };
 		C15D579C22AFD8DC00DDCFF2 /* MovesenseApi.h in Headers */ = {isa = PBXBuildFile; fileRef = C15D578E22AFD8DC00DDCFF2 /* MovesenseApi.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C171912222B28FEB001851A1 /* libmds.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C171912122B28FEB001851A1 /* libmds.a */; };
-		C171912D22B2946E001851A1 /* MDS.h in Headers */ = {isa = PBXBuildFile; fileRef = C171912C22B2946E001851A1 /* MDS.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C171913022B29D06001851A1 /* Movesense.swift in Sources */ = {isa = PBXBuildFile; fileRef = C171912F22B29D06001851A1 /* Movesense.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,7 +41,22 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		54BB331B29510C83002D9D24 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		5426A3032951128B00AD2013 /* Movesense.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Movesense.swift; path = ../MovesenseShowcase/Pods/Movesense/IOS/Movesense/swift/Movesense.swift; sourceTree = "<group>"; };
+		54BB331229510BE8002D9D24 /* libmds.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libmds.a; path = "../MovesenseShowcase/Pods/Movesense/IOS/Movesense/Release-iphoneos/libmds.a"; sourceTree = "<group>"; };
 		C12F1C4B22B23710009FC1F8 /* MovesenseBleControllerMock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovesenseBleControllerMock.swift; sourceTree = "<group>"; };
 		C12F1C4F22B246E6009FC1F8 /* MovesenseApiConcrete.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovesenseApiConcrete.swift; sourceTree = "<group>"; };
 		C12F1C5122B24793009FC1F8 /* MovesenseTypes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovesenseTypes.swift; sourceTree = "<group>"; };
@@ -68,9 +82,6 @@
 		C15D579922AFD8DC00DDCFF2 /* MovesenseApiTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovesenseApiTests.swift; sourceTree = "<group>"; };
 		C15D579B22AFD8DC00DDCFF2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C171911522B28C18001851A1 /* module.modulemap */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.module-map"; path = module.modulemap; sourceTree = "<group>"; };
-		C171912122B28FEB001851A1 /* libmds.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libmds.a; path = "../Movesense/Release-iphoneos/libmds.a"; sourceTree = "<group>"; };
-		C171912C22B2946E001851A1 /* MDS.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MDS.h; path = ../Movesense/include/MDS.h; sourceTree = "<group>"; };
-		C171912F22B29D06001851A1 /* Movesense.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Movesense.swift; path = ../Movesense/swift/Movesense.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,7 +89,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C171912222B28FEB001851A1 /* libmds.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -92,12 +102,11 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		4B1D04D8B75FD1AA75AC30E0 /* Frameworks */ = {
+		54BB331129510BE7002D9D24 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				C171912F22B29D06001851A1 /* Movesense.swift */,
-				C171912C22B2946E001851A1 /* MDS.h */,
-				C171912122B28FEB001851A1 /* libmds.a */,
+				5426A3032951128B00AD2013 /* Movesense.swift */,
+				54BB331229510BE8002D9D24 /* libmds.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -116,7 +125,7 @@
 				C15D578D22AFD8DC00DDCFF2 /* MovesenseApi */,
 				C15D579822AFD8DC00DDCFF2 /* MovesenseApiTests */,
 				C15D578C22AFD8DC00DDCFF2 /* Products */,
-				4B1D04D8B75FD1AA75AC30E0 /* Frameworks */,
+				54BB331129510BE7002D9D24 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -174,7 +183,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				C15D579C22AFD8DC00DDCFF2 /* MovesenseApi.h in Headers */,
-				C171912D22B2946E001851A1 /* MDS.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -189,6 +197,7 @@
 				C15D578722AFD8DC00DDCFF2 /* Sources */,
 				C15D578822AFD8DC00DDCFF2 /* Frameworks */,
 				C15D578922AFD8DC00DDCFF2 /* Resources */,
+				54BB331B29510C83002D9D24 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -281,6 +290,7 @@
 				C136A60C22AFE47B00163139 /* MovesenseMethodParameter.swift in Sources */,
 				C136A60522AFE47B00163139 /* MovesenseController.swift in Sources */,
 				C136A60322AFE47B00163139 /* MovesenseBleController.swift in Sources */,
+				5426A3042951128B00AD2013 /* Movesense.swift in Sources */,
 				C136A60622AFE47B00163139 /* MovesenseOperation.swift in Sources */,
 				C12F1C5222B24793009FC1F8 /* MovesenseTypes.swift in Sources */,
 				C136A60D22AFE47B00163139 /* MovesenseConnection.swift in Sources */,
@@ -293,7 +303,6 @@
 				C136A60E22AFE47B00163139 /* MovesenseDeviceConcrete.swift in Sources */,
 				C136A60422AFE47B00163139 /* MovesenseCodingKeys.swift in Sources */,
 				C136A60822AFE47B00163139 /* MovesenseResponse.swift in Sources */,
-				C171913022B29D06001851A1 /* Movesense.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -303,6 +312,7 @@
 			files = (
 				C12F1C4E22B23711009FC1F8 /* MovesenseBleControllerMock.swift in Sources */,
 				C15D579A22AFD8DC00DDCFF2 /* MovesenseApiTests.swift in Sources */,
+				5426A3052951128B00AD2013 /* Movesense.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -371,7 +381,7 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
-				LIBRARY_SEARCH_PATHS = "${SRCROOT}/../Movesense/Release-iphoneos/";
+				LIBRARY_SEARCH_PATHS = "${SRCROOT}/../MovesenseShowcase/Pods/Movesense/IOS/Movesense/Release-iphoneos/";
 				MODULEMAP_FILE = MovesenseApi/module.modulemap;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -438,7 +448,7 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
-				LIBRARY_SEARCH_PATHS = "${SRCROOT}/../Movesense/Release-iphoneos/";
+				LIBRARY_SEARCH_PATHS = "${SRCROOT}/../MovesenseShowcase/Pods/Movesense/IOS/Movesense/Release-iphoneos/";
 				MODULEMAP_FILE = MovesenseApi/module.modulemap;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
@@ -477,6 +487,13 @@
 					"@loader_path/Frameworks",
 				);
 				LIBRARY_SEARCH_PATHS = "$(inherited)";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-l\"stdc++\"",
+					"-l\"z\"",
+					"-l\"mds\"",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.movesense.MovesenseApi;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -507,6 +524,13 @@
 					"@loader_path/Frameworks",
 				);
 				LIBRARY_SEARCH_PATHS = "$(inherited)";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-l\"stdc++\"",
+					"-l\"z\"",
+					"-l\"mds\"",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.movesense.MovesenseApi;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				PROVISIONING_PROFILE_SPECIFIER = "";

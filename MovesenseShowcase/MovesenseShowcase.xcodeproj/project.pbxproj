@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		4A5BD3B91DD0B816004B88A2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A5BD3B81DD0B816004B88A2 /* AppDelegate.swift */; };
 		4A5BD3C01DD0B816004B88A2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4A5BD3BF1DD0B816004B88A2 /* Assets.xcassets */; };
+		5426A3012951111600AD2013 /* MovesenseApi.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C179FFA222B2639D0085499C /* MovesenseApi.framework */; };
+		5426A3022951111600AD2013 /* MovesenseApi.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = C179FFA222B2639D0085499C /* MovesenseApi.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		6DFB55DEDB83911EDCEC411B /* Pods_MovesenseShowcase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 811D24D722113D061FF7139B /* Pods_MovesenseShowcase.framework */; };
 		991926E76A033D524DCAC2C6 /* Pods_MovesenseShowcaseTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC099B208F24053673DD3CD8 /* Pods_MovesenseShowcaseTests.framework */; };
 		A7AD9018FDBF503CC3AB68F2 /* PopoverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7AD9C3075244ECB38A02DAA /* PopoverViewController.swift */; };
@@ -109,8 +111,6 @@
 		A7AD9FD3DFB7D8B8F441C7BB /* CALayer+shadow.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7AD9FADEC02A5A0C154CF0D /* CALayer+shadow.swift */; };
 		A7AD9FDD3706D9AEAE87429B /* DashboardContainerViewModelAcc.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7AD958B4E39C6E91BA507A0 /* DashboardContainerViewModelAcc.swift */; };
 		C10C22E42175EA610036B267 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = C10C22E62175EA610036B267 /* Localizable.strings */; };
-		C179FFA322B2639D0085499C /* MovesenseApi.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C179FFA222B2639D0085499C /* MovesenseApi.framework */; };
-		C179FFA622B2660C0085499C /* MovesenseApi.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = C179FFA222B2639D0085499C /* MovesenseApi.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		C1A7572122452FD9006878F5 /* Movesense-default.zip in Resources */ = {isa = PBXBuildFile; fileRef = C1A7571C22452FD9006878F5 /* Movesense-default.zip */; };
 		C1FF7C5621B7BF5E0023AC1C /* CsvEncodingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7AD973BEB195A863DCAD093 /* CsvEncodingTests.swift */; };
 		C1FF7C5721B7BF840023AC1C /* UnkeyedEncodingContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7AD99302F5CBACAD7067CE1 /* UnkeyedEncodingContainer.swift */; };
@@ -127,7 +127,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				C179FFA622B2660C0085499C /* MovesenseApi.framework in CopyFiles */,
+				5426A3022951111600AD2013 /* MovesenseApi.framework in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -264,8 +264,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C179FFA322B2639D0085499C /* MovesenseApi.framework in Frameworks */,
 				6DFB55DEDB83911EDCEC411B /* Pods_MovesenseShowcase.framework in Frameworks */,
+				5426A3012951111600AD2013 /* MovesenseApi.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -695,12 +695,14 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-MovesenseShowcaseTests/Pods-MovesenseShowcaseTests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Movesense/Movesense.framework",
 				"${BUILT_PRODUCTS_DIR}/MovesenseDfu/MovesenseDfu.framework",
 				"${BUILT_PRODUCTS_DIR}/ZIPFoundation/ZIPFoundation.framework",
 				"${BUILT_PRODUCTS_DIR}/iOSDFULibrary/iOSDFULibrary.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Movesense.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MovesenseDfu.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ZIPFoundation.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/iOSDFULibrary.framework",
@@ -735,12 +737,14 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-MovesenseShowcase/Pods-MovesenseShowcase-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Movesense/Movesense.framework",
 				"${BUILT_PRODUCTS_DIR}/MovesenseDfu/MovesenseDfu.framework",
 				"${BUILT_PRODUCTS_DIR}/ZIPFoundation/ZIPFoundation.framework",
 				"${BUILT_PRODUCTS_DIR}/iOSDFULibrary/iOSDFULibrary.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Movesense.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MovesenseDfu.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ZIPFoundation.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/iOSDFULibrary.framework",
@@ -1030,7 +1034,10 @@
 				INFOPLIST_FILE = MovesenseShowcase/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				LIBRARY_SEARCH_PATHS = "$(inherited)";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Pods/Movesense/IOS/Movesense/Release-iphoneos",
+				);
 				OTHER_LDFLAGS = "$(inherited)";
 				OTHER_SWIFT_FLAGS = "$(inherited) \"-D\" \"COCOAPODS\" -D DEBUG -Xfrontend -warn-long-function-bodies=200 -Xfrontend -warn-long-expression-type-checking=200";
 				PRODUCT_BUNDLE_IDENTIFIER = fi.cannedbit.movesense.showcase;
@@ -1059,7 +1066,10 @@
 				INFOPLIST_FILE = MovesenseShowcase/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				LIBRARY_SEARCH_PATHS = "$(inherited)";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Pods/Movesense/IOS/Movesense/Release-iphoneos",
+				);
 				OTHER_LDFLAGS = "$(inherited)";
 				PRODUCT_BUNDLE_IDENTIFIER = fi.cannedbit.movesense.showcase;
 				PRODUCT_NAME = "$(TARGET_NAME)";

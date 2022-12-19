@@ -1,4 +1,4 @@
 framework module MovesenseApi {
     header "MovesenseApi.h"
-    header "MDS.h"
+    header "../../../../../../../../../../git/Movesense-iOS/MovesenseShowcase/Pods/Movesense/IOS/Movesense/include/MDS.h"
 }
