@@ -154,7 +154,7 @@ extension MovesenseController: MovesenseBleControllerDelegate {
 
 extension MovesenseController: MDSConnectivityServiceDelegate {
 
-    func didFailToConnectWithError(_ error: Error) {
+    func didFailToConnectWithError(_ error: Error?) {
         // NOTE: The error is a null pointer and accessing it will cause a crash
         delegate?.onControllerError(MovesenseError.controllerError("Did fail to connect."))
     }
