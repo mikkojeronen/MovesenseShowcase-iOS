@@ -6,10 +6,10 @@ target 'MovesenseShowcase' do
   use_frameworks!
 
   # Local DFU pod via git
-  pod 'MovesenseDfu', :git => '../..', :branch => 'ios-new-sampleapp'
+  pod 'MovesenseDfu', :git => '..', :branch => 'main'
 
   # Local DFU pod via path for development
-  #pod 'MovesenseDfu', :path => '../../MovesenseDfu.podspec'
+  #pod 'MovesenseDfu', :path => '../MovesenseDfu.podspec'
 
 end
 
@@ -18,10 +18,10 @@ target 'MovesenseShowcaseTests' do
   use_frameworks!
 
   # Local DFU pod via git
-  pod 'MovesenseDfu', :git => '../..', :branch => 'ios-new-sampleapp'
+  pod 'MovesenseDfu', :git => '..', :branch => 'main'
 
   # Local DFU pod via path for development
-  #pod 'MovesenseDfu', :path => '../../MovesenseDfu.podspec'
+  #pod 'MovesenseDfu', :path => '../MovesenseDfu.podspec'
 
 end
 

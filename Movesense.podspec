@@ -14,13 +14,13 @@
 
 Pod::Spec.new do |s|
   s.name             = 'Movesense'
-  s.version          = '1.38.0'
+  s.version          = '1.68.0'
   s.summary          = 'Library for communicating with Movesense-compatible devices over Bluetooth Low Energy'
 
   s.homepage         = 'http://www.movesense.com'
   s.license          = { :type => 'CUSTOM', :file => 'LICENSE' }
-  s.authors          = { 'Suunto' => 'suunto@suunto.com' }
-  s.source           = { :git => 'https://bitbucket.org/suunto/movesense-mobile-lib.git' }
+  s.authors          = { 'Movesense' => 'info@movesense.com' }
+  s.source           = { :git => 'https://bitbucket.org/movesense/movesense-mobile-lib.git' }
     
   s.platform              = 'ios'
   s.ios.deployment_target = '11.0'

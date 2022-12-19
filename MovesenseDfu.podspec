@@ -20,14 +20,14 @@ Pod::Spec.new do |s|
 
   s.homepage         = 'http://www.movesense.com'
   s.license          = { :type => 'CUSTOM', :file => 'LICENSE' }
-  s.authors          = { 'Suunto' => 'suunto@suunto.com' }
-  s.source           = { :git => 'https://bitbucket.org/suunto/movesense-mobile-lib.git', :tag => 'v0.1' }
+  s.authors          = { 'Movesense' => 'info@movesense.com' }
+  s.source           = { :git => 'https://bitbucket.org/movesense/movesense-mobile-lib.git', :tag => 'v0.1' }
     
   s.platform              = 'ios'
-  s.ios.deployment_target = '10.0'
+  s.ios.deployment_target = '11.0'
     
   s.swift_version     = '5.0'
-  s.source_files      = 'IOS/MovesenseDfu/MovesenseDfu/*.h', 'IOS/MovesenseDfu/MovesenseDfu/*.swift'
+  s.source_files      = 'MovesenseDfu/MovesenseDfu/*.h', 'MovesenseDfu/MovesenseDfu/*.swift'
     
-  s.dependency 'iOSDFULibrary', '4.4.2'
+  s.dependency 'iOSDFULibrary', '4.13.0'
 end
