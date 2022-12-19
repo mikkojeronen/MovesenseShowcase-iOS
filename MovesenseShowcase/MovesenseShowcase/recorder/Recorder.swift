@@ -41,7 +41,7 @@ protocol Recorder: Observable {
     func convertToCsv(_ recordUrl: URL) -> URL?
 }
 
-protocol RecorderDelegate: class {
+protocol RecorderDelegate: AnyObject {
 
     func recorderError(_ record: RecorderFileJson, _ error: Error)
 }

@@ -7,7 +7,7 @@
 
 import UIKit
 
-protocol SelectorSliderDelegate: class {
+protocol SelectorSliderDelegate: AnyObject {
 
     func valueSelected(sender: UIControl, value: NSNumber)
 }

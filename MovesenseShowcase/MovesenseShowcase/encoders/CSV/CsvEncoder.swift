@@ -11,7 +11,7 @@ public enum CsvEncoderError: Error {
     case operationError(_ description: String)
 }
 
-protocol CsvEncodingContainer: class {
+protocol CsvEncodingContainer: AnyObject {
 
     var data: Data { get }
 }

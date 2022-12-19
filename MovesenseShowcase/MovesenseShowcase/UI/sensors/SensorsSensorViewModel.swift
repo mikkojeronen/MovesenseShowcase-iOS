@@ -14,7 +14,7 @@ enum ObserverEventSensor: ObserverEvent {
     case onError(_ error: Error)
 }
 
-protocol SensorsSensorViewModelDelegate: class {
+protocol SensorsSensorViewModelDelegate: AnyObject {
 
     func connectPreviousSensor(_ sensor: DeviceViewModel)
     func disconnectPreviousSensor(_ sensor: DeviceViewModel)
