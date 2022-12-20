@@ -44,7 +44,10 @@ class TabBarViewController: UITabBarController {
 
         tabBar.tintColor = UIColor.tabTint
         tabBar.barTintColor = UIColor.tabBarTint
+        tabBar.backgroundColor = UIColor.tabBarTint
         tabBar.isTranslucent = false
+
+        view.backgroundColor = UIColor.navigationBarTint
 
         delegate = self
     }
