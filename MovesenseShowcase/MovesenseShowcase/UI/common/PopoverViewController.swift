@@ -49,6 +49,9 @@ class PopoverViewController: UIViewController {
                                               x: Constants.viewShadowOffsetX,
                                               y: Constants.viewShadowOffsetX,
                                               blur: Constants.viewShadowBlur)
+
+        modalPresentationStyle = .custom
+
         view.backgroundColor = nil
     }
 
@@ -66,17 +69,17 @@ class PopoverViewController: UIViewController {
                               buttonTitle: String, dismissTitle: String,
                               action: @escaping () -> Void) {
 
-        let popoverController = PopoverViewController(contentView: contentView, buttonTitle: buttonTitle,
-                                                      dismissTitle: dismissTitle, action: action)
-
-        popoverController.modalPresentationStyle = .custom
-
         let popoverWindow = UIWindow(frame: UIScreen.main.bounds)
         popoverWindow.rootViewController = UIViewController()
         popoverWindow.rootViewController?.view.backgroundColor = UIColor.clear
         popoverWindow.windowLevel = UIWindow.Level.alert + 1
         popoverWindow.makeKeyAndVisible()
-        popoverWindow.rootViewController?.present(popoverController, animated: true)
+
+        popoverWindow.rootViewController?.present(PopoverViewController(contentView: contentView,
+                                                                        buttonTitle: buttonTitle,
+                                                                        dismissTitle: dismissTitle,
+                                                                        action: { action(); _ = popoverWindow }),
+                                                  animated: true)
 
         UIView.animate(withDuration: Constants.transitionDuration) {
             popoverWindow.rootViewController?.view.backgroundColor = UIColor.confirmationBackground
