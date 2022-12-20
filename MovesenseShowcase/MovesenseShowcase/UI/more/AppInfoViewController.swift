@@ -29,7 +29,7 @@ class AppInfoViewController: UIViewController {
         self.appUpdatedLabel = UILabel.init(with: UIFont.systemFont(ofSize: 16, weight: .light),
                                             inColor: UIColor.titleTextBlack, lines: 1)
         self.appCompanyLabel = UILabel.init(with: UIFont.systemFont(ofSize: 16, weight: .light),
-                                            inColor: UIColor.titleTextBlack, lines: 1,
+                                            inColor: UIColor.titleTextBlack, lines: 2,
                                             text: NSLocalizedString("APP_INFO_APP_COMPANY_TITLE", comment: ""))
         self.appCompatibilityLabel = UILabel.init(with: UIFont.systemFont(ofSize: 16, weight: .light),
                                                   inColor: UIColor.titleTextBlack, lines: 0,
