@@ -110,6 +110,8 @@ class RecordViewController: UIViewController {
         if containers.isEmpty {
             recordButton.isEnabled = false
         }
+
+        view.backgroundColor = UIColor.navigationBarTint
     }
 
     override func viewDidLoad() {

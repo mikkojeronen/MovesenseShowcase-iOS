@@ -104,7 +104,11 @@ extension TabBarViewController: UITabBarControllerDelegate {
         if viewController === recordTab {
             let viewModel = dashboardTab.dashboardViewModel
             let recordViewController = RecordViewController(viewModel: viewModel)
-            present(UINavigationController(rootViewController: recordViewController), animated: true)
+            let navigationController = UINavigationController(rootViewController: recordViewController)
+
+            navigationController.modalPresentationStyle = .fullScreen
+            present(navigationController, animated: true)
+
             return false
         }
 
