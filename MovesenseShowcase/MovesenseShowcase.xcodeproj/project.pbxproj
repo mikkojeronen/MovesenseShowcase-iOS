@@ -9,10 +9,6 @@
 /* Begin PBXBuildFile section */
 		4A5BD3B91DD0B816004B88A2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A5BD3B81DD0B816004B88A2 /* AppDelegate.swift */; };
 		4A5BD3C01DD0B816004B88A2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4A5BD3BF1DD0B816004B88A2 /* Assets.xcassets */; };
-		5426A3012951111600AD2013 /* MovesenseApi.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C179FFA222B2639D0085499C /* MovesenseApi.framework */; };
-		5426A3022951111600AD2013 /* MovesenseApi.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = C179FFA222B2639D0085499C /* MovesenseApi.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		6DFB55DEDB83911EDCEC411B /* Pods_MovesenseShowcase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 811D24D722113D061FF7139B /* Pods_MovesenseShowcase.framework */; };
-		991926E76A033D524DCAC2C6 /* Pods_MovesenseShowcaseTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC099B208F24053673DD3CD8 /* Pods_MovesenseShowcaseTests.framework */; };
 		A7AD9018FDBF503CC3AB68F2 /* PopoverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7AD9C3075244ECB38A02DAA /* PopoverViewController.swift */; };
 		A7AD90814355106BBCEF00C5 /* DfuHowToFooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7AD90E37B90B81B6D1E5B2D /* DfuHowToFooterView.swift */; };
 		A7AD90A2741393CA2DE9CA78 /* UIView+separator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7AD931DAEB78916D2229ED8 /* UIView+separator.swift */; };
@@ -127,7 +123,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				5426A3022951111600AD2013 /* MovesenseApi.framework in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,13 +133,6 @@
 		4A5BD3B81DD0B816004B88A2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4A5BD3BF1DD0B816004B88A2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4A5BD3C41DD0B816004B88A2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		4A5BD4001DD0BE02004B88A2 /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
-		5F26FE123E01CB282A455009 /* Pods-MovesenseShowcase.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MovesenseShowcase.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MovesenseShowcase/Pods-MovesenseShowcase.debug.xcconfig"; sourceTree = "<group>"; };
-		5F4CACA6E0AA60FE2027BAB7 /* Pods_movesense_swiftapp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_movesense_swiftapp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		69A3128DC0EF2B659181D9AC /* Pods-MovesenseShowcase.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MovesenseShowcase.release.xcconfig"; path = "Pods/Target Support Files/Pods-MovesenseShowcase/Pods-MovesenseShowcase.release.xcconfig"; sourceTree = "<group>"; };
-		6DCCF614D1CA2AF8FE2229B4 /* Pods-MovesenseShowcaseTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MovesenseShowcaseTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MovesenseShowcaseTests/Pods-MovesenseShowcaseTests.debug.xcconfig"; sourceTree = "<group>"; };
-		73C4EADC41A5A8B5BA823AC3 /* Pods-MovesenseShowcaseTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MovesenseShowcaseTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MovesenseShowcaseTests/Pods-MovesenseShowcaseTests.release.xcconfig"; sourceTree = "<group>"; };
-		811D24D722113D061FF7139B /* Pods_MovesenseShowcase.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MovesenseShowcase.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A7AD9086496174D7B98A6D95 /* DfuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DfuViewController.swift; sourceTree = "<group>"; };
 		A7AD909BE5333489F8751794 /* NSAttributedString+withLocalizedHtmlString.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSAttributedString+withLocalizedHtmlString.swift"; sourceTree = "<group>"; };
 		A7AD909E248E628E774D0189 /* OnboardingIntroPageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnboardingIntroPageView.swift; sourceTree = "<group>"; };
@@ -244,19 +232,11 @@
 		A7AD9FC500AD3AB7D6ADE284 /* RecordingsTabViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecordingsTabViewController.swift; sourceTree = "<group>"; };
 		A7AD9FD559021E2268A46A55 /* SensorsTabViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SensorsTabViewController.swift; sourceTree = "<group>"; };
 		A7AD9FFEED800DA88E0F65AF /* TermsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TermsViewController.swift; sourceTree = "<group>"; };
-		BC099B208F24053673DD3CD8 /* Pods_MovesenseShowcaseTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MovesenseShowcaseTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C10C22E72175EA9C0036B267 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/Localizable.strings; sourceTree = "<group>"; };
-		C1488C6F22280EA900121851 /* Zip.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Zip.framework; path = MovesenseDfu/Frameworks/Zip.framework; sourceTree = "<group>"; };
-		C1488C7122280EAF00121851 /* iOSDFULibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = iOSDFULibrary.framework; path = MovesenseDfu/Frameworks/iOSDFULibrary.framework; sourceTree = "<group>"; };
-		C179FFA222B2639D0085499C /* MovesenseApi.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = MovesenseApi.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C198C40C212FF7C800F3A9D8 /* MovesenseShowcaseTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MovesenseShowcaseTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C198C410212FF7C900F3A9D8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C1A7571C22452FD9006878F5 /* Movesense-default.zip */ = {isa = PBXFileReference; lastKnownFileType = archive.zip; path = "Movesense-default.zip"; sourceTree = "<group>"; };
-		C1A912022227D405005BDECC /* MovesenseDfu.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = MovesenseDfu.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C1BCF25A228C0B3900D5A726 /* faq_en.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = faq_en.html; sourceTree = "<group>"; };
-		EC76B20E6965AF0286D6C383 /* Pods_movesense_swiftappTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_movesense_swiftappTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		FF57CAA11F0F72EF00394EBE /* libmds.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libmds.a; path = "Pods/Movesense/IOS/Movesense/Release-iphoneos/libmds.a"; sourceTree = "<group>"; };
-		FFC920DE1F0E518C00D69101 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -264,8 +244,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6DFB55DEDB83911EDCEC411B /* Pods_MovesenseShowcase.framework in Frameworks */,
-				5426A3012951111600AD2013 /* MovesenseApi.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -273,7 +251,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				991926E76A033D524DCAC2C6 /* Pods_MovesenseShowcaseTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -287,7 +264,6 @@
 				C198C40D212FF7C800F3A9D8 /* MovesenseShowcaseTests */,
 				4A5BD3B61DD0B816004B88A2 /* Products */,
 				4A5BD3ED1DD0B875004B88A2 /* Frameworks */,
-				70C9CC3A3DB1090E5E608201 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -320,30 +296,8 @@
 		4A5BD3ED1DD0B875004B88A2 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				C179FFA222B2639D0085499C /* MovesenseApi.framework */,
-				C1488C7122280EAF00121851 /* iOSDFULibrary.framework */,
-				C1488C6F22280EA900121851 /* Zip.framework */,
-				C1A912022227D405005BDECC /* MovesenseDfu.framework */,
-				FF57CAA11F0F72EF00394EBE /* libmds.a */,
-				FFC920DE1F0E518C00D69101 /* libz.tbd */,
-				4A5BD4001DD0BE02004B88A2 /* libc++.tbd */,
-				5F4CACA6E0AA60FE2027BAB7 /* Pods_movesense_swiftapp.framework */,
-				EC76B20E6965AF0286D6C383 /* Pods_movesense_swiftappTests.framework */,
-				811D24D722113D061FF7139B /* Pods_MovesenseShowcase.framework */,
-				BC099B208F24053673DD3CD8 /* Pods_MovesenseShowcaseTests.framework */,
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		70C9CC3A3DB1090E5E608201 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				5F26FE123E01CB282A455009 /* Pods-MovesenseShowcase.debug.xcconfig */,
-				69A3128DC0EF2B659181D9AC /* Pods-MovesenseShowcase.release.xcconfig */,
-				6DCCF614D1CA2AF8FE2229B4 /* Pods-MovesenseShowcaseTests.debug.xcconfig */,
-				73C4EADC41A5A8B5BA823AC3 /* Pods-MovesenseShowcaseTests.release.xcconfig */,
-			);
-			name = Pods;
 			sourceTree = "<group>";
 		};
 		A7AD902F543B8777D367B630 /* record */ = {
@@ -584,11 +538,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4A5BD3DD1DD0B816004B88A2 /* Build configuration list for PBXNativeTarget "MovesenseShowcase" */;
 			buildPhases = (
-				F3216A750E41DE8CAB45066D /* [CP] Check Pods Manifest.lock */,
 				4A5BD3B11DD0B816004B88A2 /* Sources */,
 				4A5BD3B21DD0B816004B88A2 /* Frameworks */,
 				4A5BD3B31DD0B816004B88A2 /* Resources */,
-				E72035C864E1DF071F71EA02 /* [CP] Embed Pods Frameworks */,
 				C1488C4A2227F91900121851 /* CopyFiles */,
 			);
 			buildRules = (
@@ -604,11 +556,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C198C417212FF7C900F3A9D8 /* Build configuration list for PBXNativeTarget "MovesenseShowcaseTests" */;
 			buildPhases = (
-				3D4799B51238430633C77382 /* [CP] Check Pods Manifest.lock */,
 				C198C408212FF7C800F3A9D8 /* Sources */,
 				C198C409212FF7C800F3A9D8 /* Frameworks */,
 				C198C40A212FF7C800F3A9D8 /* Resources */,
-				320FEB5034F68323F6EE2251 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -686,93 +636,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		320FEB5034F68323F6EE2251 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-MovesenseShowcaseTests/Pods-MovesenseShowcaseTests-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/Movesense/Movesense.framework",
-				"${BUILT_PRODUCTS_DIR}/MovesenseDfu/MovesenseDfu.framework",
-				"${BUILT_PRODUCTS_DIR}/ZIPFoundation/ZIPFoundation.framework",
-				"${BUILT_PRODUCTS_DIR}/iOSDFULibrary/iOSDFULibrary.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Movesense.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MovesenseDfu.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ZIPFoundation.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/iOSDFULibrary.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MovesenseShowcaseTests/Pods-MovesenseShowcaseTests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		3D4799B51238430633C77382 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-MovesenseShowcaseTests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		E72035C864E1DF071F71EA02 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-MovesenseShowcase/Pods-MovesenseShowcase-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/Movesense/Movesense.framework",
-				"${BUILT_PRODUCTS_DIR}/MovesenseDfu/MovesenseDfu.framework",
-				"${BUILT_PRODUCTS_DIR}/ZIPFoundation/ZIPFoundation.framework",
-				"${BUILT_PRODUCTS_DIR}/iOSDFULibrary/iOSDFULibrary.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Movesense.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MovesenseDfu.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ZIPFoundation.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/iOSDFULibrary.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MovesenseShowcase/Pods-MovesenseShowcase-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		F3216A750E41DE8CAB45066D /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-MovesenseShowcase-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		4A5BD3B11DD0B816004B88A2 /* Sources */ = {
@@ -1020,7 +883,6 @@
 		};
 		4A5BD3DE1DD0B816004B88A2 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5F26FE123E01CB282A455009 /* Pods-MovesenseShowcase.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = icon_app;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = image_launch;
@@ -1052,7 +914,6 @@
 		};
 		4A5BD3DF1DD0B816004B88A2 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 69A3128DC0EF2B659181D9AC /* Pods-MovesenseShowcase.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = icon_app;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = image_launch;
@@ -1083,7 +944,6 @@
 		};
 		C198C413212FF7C900F3A9D8 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6DCCF614D1CA2AF8FE2229B4 /* Pods-MovesenseShowcaseTests.debug.xcconfig */;
 			buildSettings = {
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -1108,7 +968,6 @@
 		};
 		C198C414212FF7C900F3A9D8 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 73C4EADC41A5A8B5BA823AC3 /* Pods-MovesenseShowcaseTests.release.xcconfig */;
 			buildSettings = {
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
