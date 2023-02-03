@@ -3,12 +3,14 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 46;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		4A5BD3B91DD0B816004B88A2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A5BD3B81DD0B816004B88A2 /* AppDelegate.swift */; };
 		4A5BD3C01DD0B816004B88A2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4A5BD3BF1DD0B816004B88A2 /* Assets.xcassets */; };
+		5469A5F5298D67CB00557516 /* MovesenseApi in Frameworks */ = {isa = PBXBuildFile; productRef = 5469A5F4298D67CB00557516 /* MovesenseApi */; };
+		5469A5F8298D681000557516 /* MovesenseDfu in Frameworks */ = {isa = PBXBuildFile; productRef = 5469A5F7298D681000557516 /* MovesenseDfu */; };
 		A7AD9018FDBF503CC3AB68F2 /* PopoverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7AD9C3075244ECB38A02DAA /* PopoverViewController.swift */; };
 		A7AD90814355106BBCEF00C5 /* DfuHowToFooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7AD90E37B90B81B6D1E5B2D /* DfuHowToFooterView.swift */; };
 		A7AD90A2741393CA2DE9CA78 /* UIView+separator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7AD931DAEB78916D2229ED8 /* UIView+separator.swift */; };
@@ -244,6 +246,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5469A5F8298D681000557516 /* MovesenseDfu in Frameworks */,
+				5469A5F5298D67CB00557516 /* MovesenseApi in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -548,6 +552,10 @@
 			dependencies = (
 			);
 			name = MovesenseShowcase;
+			packageProductDependencies = (
+				5469A5F4298D67CB00557516 /* MovesenseApi */,
+				5469A5F7298D681000557516 /* MovesenseDfu */,
+			);
 			productName = MovesenseShowcase;
 			productReference = 4A5BD3B51DD0B816004B88A2 /* MovesenseShowcase.app */;
 			productType = "com.apple.product-type.application";
@@ -607,6 +615,10 @@
 				en,
 			);
 			mainGroup = 4A5BD3AC1DD0B816004B88A2;
+			packageReferences = (
+				5469A5F3298D67CB00557516 /* XCRemoteSwiftPackageReference "MovesenseApi-iOS" */,
+				5469A5F6298D681000557516 /* XCRemoteSwiftPackageReference "MovesenseDfu-iOS" */,
+			);
 			productRefGroup = 4A5BD3B61DD0B816004B88A2 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -875,7 +887,8 @@
 				MTL_ENABLE_DEBUG_INFO = NO;
 				OTHER_LDFLAGS = "";
 				SDKROOT = iphoneos;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 			};
@@ -895,7 +908,10 @@
 				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = MovesenseShowcase/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Pods/Movesense/IOS/Movesense/Release-iphoneos",
@@ -926,7 +942,10 @@
 				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = MovesenseShowcase/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Pods/Movesense/IOS/Movesense/Release-iphoneos",
@@ -955,7 +974,11 @@
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				INFOPLIST_FILE = MovesenseShowcaseTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				OTHER_LDFLAGS = "$(inherited)";
 				PRODUCT_BUNDLE_IDENTIFIER = MovesenseShowcaseTests;
@@ -979,7 +1002,11 @@
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				INFOPLIST_FILE = MovesenseShowcaseTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				OTHER_LDFLAGS = "$(inherited)";
 				PRODUCT_BUNDLE_IDENTIFIER = MovesenseShowcaseTests;
@@ -1021,6 +1048,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		5469A5F3298D67CB00557516 /* XCRemoteSwiftPackageReference "MovesenseApi-iOS" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "git@github.com:mikkojeronen/MovesenseApi-iOS.git";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+		5469A5F6298D681000557516 /* XCRemoteSwiftPackageReference "MovesenseDfu-iOS" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "git@github.com:mikkojeronen/MovesenseDfu-iOS.git";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		5469A5F4298D67CB00557516 /* MovesenseApi */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5469A5F3298D67CB00557516 /* XCRemoteSwiftPackageReference "MovesenseApi-iOS" */;
+			productName = MovesenseApi;
+		};
+		5469A5F7298D681000557516 /* MovesenseDfu */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5469A5F6298D681000557516 /* XCRemoteSwiftPackageReference "MovesenseDfu-iOS" */;
+			productName = MovesenseDfu;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 4A5BD3AD1DD0B816004B88A2 /* Project object */;
 }
