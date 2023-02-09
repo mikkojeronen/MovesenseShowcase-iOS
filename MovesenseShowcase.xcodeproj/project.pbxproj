@@ -269,7 +269,6 @@
 				4A5BD3B71DD0B816004B88A2 /* MovesenseShowcase */,
 				C198C40D212FF7C800F3A9D8 /* MovesenseShowcaseTests */,
 				4A5BD3B61DD0B816004B88A2 /* Products */,
-				4A5BD3ED1DD0B875004B88A2 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -297,13 +296,6 @@
 				C10C22E62175EA610036B267 /* Localizable.strings */,
 			);
 			path = MovesenseShowcase;
-			sourceTree = "<group>";
-		};
-		4A5BD3ED1DD0B875004B88A2 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		A7AD902F543B8777D367B630 /* record */ = {
