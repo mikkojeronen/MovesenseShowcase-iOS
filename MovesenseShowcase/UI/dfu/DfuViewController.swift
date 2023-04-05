@@ -47,7 +47,7 @@ class DfuViewController: UIViewController {
         self.reconnectLabel = UILabel(with: UIFont.systemFont(ofSize: 16.0, weight: .regular),
                                       inColor: UIColor.white, lines: 1,
                                       text: NSLocalizedString("DFU_RECONNECT_TITLE", comment: ""))
-        self.reconnectIndicator = UIActivityIndicatorView(style: .whiteLarge)
+        self.reconnectIndicator = UIActivityIndicatorView(style: UIActivityIndicatorView.Style.large)
 
         self.currentFirmwareTitleLabel = UILabel(with: UIFont.systemFont(ofSize: 13.0, weight: .regular),
                                                  inColor: UIColor.titleTextBlack.withAlphaComponent(0.6), lines: 1,

@@ -84,7 +84,6 @@ class DashboardOperationViewControllerDebug: UIViewController {
         parameterPicker.delegate = self
         parameterPicker.dataSource = self
         parameterPicker.contentMode = .scaleAspectFit
-        parameterPicker.showsSelectionIndicator = false
     }
 
     override func viewDidLoad() {
