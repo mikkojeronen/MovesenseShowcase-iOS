@@ -108,7 +108,7 @@ class DashboardTabViewController: UIViewController {
     @objc private func connectAction() {
         TabBarViewController.sharedInstance.selectedIndex = TabBarTabIds.sensors
         TabBarViewController.sharedInstance.tabNavigationControllers[safe: TabBarTabIds.sensors]??
-            .pushViewController(ConnectListViewController(viewModel: OnboardingViewModel()), animated: true)
+            .pushViewController(ConnectListViewController(viewModel: SensorScanningViewModel()), animated: true)
     }
 
     @objc private func startEditActivity() {

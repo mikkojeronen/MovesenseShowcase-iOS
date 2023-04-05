@@ -1,24 +1,29 @@
 //
-// OnboardingViewModel.swift
+// SensorScanningViewModel.swift
 // MovesenseShowcase
 //
+// Copyright © 2023 Canned Bit Ltd. All rights reserved.
 // Copyright (c) 2018 Suunto. All rights reserved.
 //
 
 import Foundation
 import MovesenseApi
 
-enum MovesenseObserverEventOnboarding: ObserverEvent {
+enum MovesenseObserverEventSensorScanning: ObserverEvent {
 
     case deviceDiscovered(_ device: DeviceViewModel)
     case deviceStateChanged(_ device: DeviceViewModel)
     case onError(_ error: Error)
 }
 
-class OnboardingViewModel: Observable {
+class SensorScanningViewModel: Observable {
 
     private var devices: [MovesenseDevice] {
         return Movesense.api.getDevices()
+    }
+
+    private var virtualDevices: [MovesenseDevice] {
+        return []
     }
 
     internal var observations: [Observation] = [Observation]()
@@ -72,7 +77,7 @@ class OnboardingViewModel: Observable {
     }
 }
 
-extension OnboardingViewModel: Observer {
+extension SensorScanningViewModel: Observer {
 
     func handleEvent(_ event: ObserverEvent) {
         guard let event = event as? MovesenseObserverEventApi else { return }
@@ -89,30 +94,30 @@ extension OnboardingViewModel: Observer {
 
     func deviceConnecting(_ device: MovesenseDevice) {
         let connectingDevice = DeviceViewModel(device, newState: .connecting)
-        notifyObservers(MovesenseObserverEventOnboarding.deviceStateChanged(connectingDevice))
+        notifyObservers(MovesenseObserverEventSensorScanning.deviceStateChanged(connectingDevice))
     }
 
     func deviceConnected(_ device: MovesenseDevice) {
         let connectedDevice = DeviceViewModel(device, newState: .connected)
-        notifyObservers(MovesenseObserverEventOnboarding.deviceStateChanged(connectedDevice))
+        notifyObservers(MovesenseObserverEventSensorScanning.deviceStateChanged(connectedDevice))
     }
 
     func deviceDisconnected(_ device: MovesenseDevice) {
         let disconnectedDevice = DeviceViewModel(device, newState: .disconnected)
-        notifyObservers(MovesenseObserverEventOnboarding.deviceStateChanged(disconnectedDevice))
+        notifyObservers(MovesenseObserverEventSensorScanning.deviceStateChanged(disconnectedDevice))
     }
 
     func onDeviceError(_ error: Error, device: MovesenseDevice) {
         let errorDevice = DeviceViewModel(device, newState: .disconnected)
-        notifyObservers(MovesenseObserverEventOnboarding.onError(error))
-        notifyObservers(MovesenseObserverEventOnboarding.deviceStateChanged(errorDevice))
+        notifyObservers(MovesenseObserverEventSensorScanning.onError(error))
+        notifyObservers(MovesenseObserverEventSensorScanning.deviceStateChanged(errorDevice))
     }
 
     func deviceDiscovered(_ device: MovesenseDevice) {
-        notifyObservers(MovesenseObserverEventOnboarding.deviceDiscovered(DeviceViewModel(device)))
+        notifyObservers(MovesenseObserverEventSensorScanning.deviceDiscovered(DeviceViewModel(device)))
     }
 
     func onApiError(_ error: Error) {
-        notifyObservers(MovesenseObserverEventOnboarding.onError(error))
+        notifyObservers(MovesenseObserverEventSensorScanning.onError(error))
     }
 }

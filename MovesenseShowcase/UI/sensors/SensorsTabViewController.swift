@@ -87,11 +87,11 @@ class SensorsTabViewController: UIViewController {
     }
 
     @objc private func sensorListActivity() {
-        navigationController?.pushViewController(ConnectListViewController(viewModel: OnboardingViewModel()), animated: true)
+        navigationController?.pushViewController(ConnectListViewController(viewModel: SensorScanningViewModel()), animated: true)
     }
 
     @objc private func connectAction() {
-        navigationController?.pushViewController(ConnectListViewController(viewModel: OnboardingViewModel()), animated: true)
+        navigationController?.pushViewController(ConnectListViewController(viewModel: SensorScanningViewModel()), animated: true)
     }
 
     @objc private func applicationWillResignActive() {

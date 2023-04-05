@@ -31,7 +31,7 @@
 		A7AD92A1144E3A8D9B6B6369 /* RecordingsConvertActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7AD96A9B0A28F3E8C9879D8 /* RecordingsConvertActivity.swift */; };
 		A7AD92B456127728E97A091C /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7AD97959704D5769B5DD3DE /* OnboardingViewController.swift */; };
 		A7AD92FE83AE9BCB6F985F9A /* DashboardOperationViewControllerAcc.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7AD93896C4EEDBCC57513FB /* DashboardOperationViewControllerAcc.swift */; };
-		A7AD9348F54E2F27F06B6435 /* OnboardingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7AD9206D9EBB4415E1FC488 /* OnboardingViewModel.swift */; };
+		A7AD9348F54E2F27F06B6435 /* SensorScanningViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7AD9206D9EBB4415E1FC488 /* SensorScanningViewModel.swift */; };
 		A7AD9356B80B967A3DE3189E /* DashboardContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7AD9806A26BB4E9240B75EF /* DashboardContainerViewController.swift */; };
 		A7AD93612E9BB7E4B57FA803 /* RecordingsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7AD94A3F0169B74328C0C68 /* RecordingsViewModel.swift */; };
 		A7AD93CFFC75E018F30278AE /* RecorderFileJson.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7AD9DC29DAE60D5F1B6A7D6 /* RecorderFileJson.swift */; };
@@ -145,7 +145,7 @@
 		A7AD911FCFCFB967EACE989D /* PulseVisualizationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PulseVisualizationView.swift; sourceTree = "<group>"; };
 		A7AD913CC034D8EA41912E85 /* AppInfoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppInfoViewController.swift; sourceTree = "<group>"; };
 		A7AD91C22BED0FD42DB67961 /* DfuProgressViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DfuProgressViewController.swift; sourceTree = "<group>"; };
-		A7AD9206D9EBB4415E1FC488 /* OnboardingViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnboardingViewModel.swift; sourceTree = "<group>"; };
+		A7AD9206D9EBB4415E1FC488 /* SensorScanningViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SensorScanningViewModel.swift; sourceTree = "<group>"; };
 		A7AD92301E0903DAB4C5AE99 /* Recorder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Recorder.swift; sourceTree = "<group>"; };
 		A7AD923CB113827CDA5AE505 /* PlaceholderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaceholderView.swift; sourceTree = "<group>"; };
 		A7AD925D935A89541C0712B6 /* DashboardPlotterSlice.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DashboardPlotterSlice.swift; sourceTree = "<group>"; };
@@ -340,7 +340,6 @@
 			isa = PBXGroup;
 			children = (
 				A7AD97959704D5769B5DD3DE /* OnboardingViewController.swift */,
-				A7AD9206D9EBB4415E1FC488 /* OnboardingViewModel.swift */,
 				A7AD9953018590392C5F242F /* OnboardingSensorInfoViewController.swift */,
 				A7AD992F4D15B88B15AD15B4 /* OnboardingIntroViewController.swift */,
 				A7AD909E248E628E774D0189 /* OnboardingIntroPageView.swift */,
@@ -434,6 +433,7 @@
 		A7AD9C7D3208FBDE4FE22EC2 /* common */ = {
 			isa = PBXGroup;
 			children = (
+				A7AD9206D9EBB4415E1FC488 /* SensorScanningViewModel.swift */,
 				A7AD9D2C31BA086FD4323DFA /* DeviceViewModel.swift */,
 				A7AD923CB113827CDA5AE505 /* PlaceholderView.swift */,
 				A7AD94025FCB7F0E7454972D /* Utils.swift */,
@@ -658,7 +658,7 @@
 				A7AD91B508A75B37B0870E26 /* NSAttributedString+withLocalizedHtmlString.swift in Sources */,
 				A7AD9B06E0D3ED81FECCA54D /* UILabel+withFont.swift in Sources */,
 				A7AD92B456127728E97A091C /* OnboardingViewController.swift in Sources */,
-				A7AD9348F54E2F27F06B6435 /* OnboardingViewModel.swift in Sources */,
+				A7AD9348F54E2F27F06B6435 /* SensorScanningViewModel.swift in Sources */,
 				A7AD9FC4618CC9302C9BCAEF /* OnboardingSensorInfoViewController.swift in Sources */,
 				A7AD90A2741393CA2DE9CA78 /* UIView+separator.swift in Sources */,
 				A7AD9ED406E7E1F2725F9F62 /* DashboardViewModel.swift in Sources */,

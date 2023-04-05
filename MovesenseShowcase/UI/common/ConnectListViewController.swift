@@ -14,7 +14,7 @@ class ConnectListViewController: UIViewController {
         static let placeholderWidth: CGFloat = 120.0
     }
 
-    private let viewModel: OnboardingViewModel
+    private let viewModel: SensorScanningViewModel
     private let searchContainer: UIView = UIView(frame: CGRect.zero)
     private let searchBar: UISearchBar = UISearchBar(frame: CGRect.zero)
     private let connectView: ActionButtonView = ActionButtonView()
@@ -22,7 +22,7 @@ class ConnectListViewController: UIViewController {
 
     private var connectConstraint: NSLayoutConstraint?
 
-    init(viewModel: OnboardingViewModel) {
+    init(viewModel: SensorScanningViewModel) {
         self.viewModel = viewModel
         super.init(nibName: nil, bundle: nil)
 
@@ -190,7 +190,7 @@ class ConnectListViewController: UIViewController {
 
 extension ConnectListViewController: Observer {
     func handleEvent(_ event: ObserverEvent) {
-        guard let event = event as? MovesenseObserverEventOnboarding else { return }
+        guard let event = event as? MovesenseObserverEventSensorScanning else { return }
 
         switch event {
         case .deviceDiscovered(let device): deviceDiscovered(device)

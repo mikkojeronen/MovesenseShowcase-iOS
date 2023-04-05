@@ -20,7 +20,7 @@ class OnboardingViewController: UIViewController {
         static let buttonTitleFont: UIFont = UIFont.boldSystemFont(ofSize: 14.0)
     }
 
-    fileprivate let viewModel: OnboardingViewModel
+    fileprivate let viewModel: SensorScanningViewModel
 
     private let actionButton: UIButton = UIButton(type: .system)
     private let backButton: UIButton = UIButton(type: .system)
@@ -42,7 +42,7 @@ class OnboardingViewController: UIViewController {
     }
 
     init() {
-        self.viewModel = OnboardingViewModel()
+        self.viewModel = SensorScanningViewModel()
         self.logoImageView = UIImageView(image: UIImage(named: "image_logo_movesense"))
         self.wireframeImageView = UIImageView(image: UIImage(named: "image_sensor_wireframe"))
         self.sensorImageView = UIImageView(image: UIImage(named: "image_sensor"))
@@ -319,7 +319,7 @@ class OnboardingViewController: UIViewController {
 extension OnboardingViewController: Observer {
 
     func handleEvent(_ event: ObserverEvent) {
-        guard let event = event as? MovesenseObserverEventOnboarding else { return }
+        guard let event = event as? MovesenseObserverEventSensorScanning else { return }
 
         switch event {
         case .deviceDiscovered: return
