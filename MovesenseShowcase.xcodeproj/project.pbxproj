@@ -9,8 +9,7 @@
 /* Begin PBXBuildFile section */
 		4A5BD3B91DD0B816004B88A2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A5BD3B81DD0B816004B88A2 /* AppDelegate.swift */; };
 		4A5BD3C01DD0B816004B88A2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4A5BD3BF1DD0B816004B88A2 /* Assets.xcassets */; };
-		545CAB1A2995039700B27BF4 /* MovesenseApi in Frameworks */ = {isa = PBXBuildFile; productRef = 545CAB192995039700B27BF4 /* MovesenseApi */; };
-		5469A5F5298D67CB00557516 /* MovesenseApi in Frameworks */ = {isa = PBXBuildFile; productRef = 5469A5F4298D67CB00557516 /* MovesenseApi */; };
+		5468734329ED48DB00C58FD9 /* MovesenseVirtualApi in Frameworks */ = {isa = PBXBuildFile; productRef = 5468734229ED48DB00C58FD9 /* MovesenseVirtualApi */; };
 		5469A5F8298D681000557516 /* MovesenseDfu in Frameworks */ = {isa = PBXBuildFile; productRef = 5469A5F7298D681000557516 /* MovesenseDfu */; };
 		A7AD9018FDBF503CC3AB68F2 /* PopoverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7AD9C3075244ECB38A02DAA /* PopoverViewController.swift */; };
 		A7AD90814355106BBCEF00C5 /* DfuHowToFooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7AD90E37B90B81B6D1E5B2D /* DfuHowToFooterView.swift */; };
@@ -136,6 +135,8 @@
 		4A5BD3B81DD0B816004B88A2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4A5BD3BF1DD0B816004B88A2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4A5BD3C41DD0B816004B88A2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5453403429ED475000909E2F /* MovesenseVirtualApi-iOS */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = "MovesenseVirtualApi-iOS"; path = "../MovesenseVirtualApi-iOS"; sourceTree = "<group>"; };
+		5468734429EE939D00C58FD9 /* MovesenseApi-iOS */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = "MovesenseApi-iOS"; path = "../MovesenseApi-iOS"; sourceTree = "<group>"; };
 		A7AD9086496174D7B98A6D95 /* DfuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DfuViewController.swift; sourceTree = "<group>"; };
 		A7AD909BE5333489F8751794 /* NSAttributedString+withLocalizedHtmlString.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSAttributedString+withLocalizedHtmlString.swift"; sourceTree = "<group>"; };
 		A7AD909E248E628E774D0189 /* OnboardingIntroPageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnboardingIntroPageView.swift; sourceTree = "<group>"; };
@@ -248,7 +249,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5469A5F8298D681000557516 /* MovesenseDfu in Frameworks */,
-				5469A5F5298D67CB00557516 /* MovesenseApi in Frameworks */,
+				5468734329ED48DB00C58FD9 /* MovesenseVirtualApi in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -256,7 +257,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				545CAB1A2995039700B27BF4 /* MovesenseApi in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -266,9 +266,11 @@
 		4A5BD3AC1DD0B816004B88A2 = {
 			isa = PBXGroup;
 			children = (
+				5453403329ED475000909E2F /* Packages */,
 				4A5BD3B71DD0B816004B88A2 /* MovesenseShowcase */,
 				C198C40D212FF7C800F3A9D8 /* MovesenseShowcaseTests */,
 				4A5BD3B61DD0B816004B88A2 /* Products */,
+				5412894629D5B0C100440A9E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -296,6 +298,22 @@
 				C10C22E62175EA610036B267 /* Localizable.strings */,
 			);
 			path = MovesenseShowcase;
+			sourceTree = "<group>";
+		};
+		5412894629D5B0C100440A9E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5453403329ED475000909E2F /* Packages */ = {
+			isa = PBXGroup;
+			children = (
+				5453403429ED475000909E2F /* MovesenseVirtualApi-iOS */,
+				5468734429EE939D00C58FD9 /* MovesenseApi-iOS */,
+			);
+			name = Packages;
 			sourceTree = "<group>";
 		};
 		A7AD902F543B8777D367B630 /* record */ = {
@@ -433,20 +451,20 @@
 		A7AD9C7D3208FBDE4FE22EC2 /* common */ = {
 			isa = PBXGroup;
 			children = (
-				A7AD9206D9EBB4415E1FC488 /* SensorScanningViewModel.swift */,
-				A7AD9D2C31BA086FD4323DFA /* DeviceViewModel.swift */,
-				A7AD923CB113827CDA5AE505 /* PlaceholderView.swift */,
-				A7AD94025FCB7F0E7454972D /* Utils.swift */,
-				A7AD959EFB1DD4B3A96898B4 /* PulseRingView.swift */,
-				A7AD911FCFCFB967EACE989D /* PulseVisualizationView.swift */,
-				A7AD9C3075244ECB38A02DAA /* PopoverViewController.swift */,
-				A7AD9B1B89994AD3E398FC92 /* ConfirmationView.swift */,
-				A7AD9FB604FE53BB7CA57FB7 /* WelcomeBackView.swift */,
 				A7AD98D279C15FA848069326 /* ActionButtonView.swift */,
+				A7AD9B1B89994AD3E398FC92 /* ConfirmationView.swift */,
 				A7AD97AB51FBCA21775656FC /* ConnectListViewController.swift */,
 				A7AD9B425593F4F3B810A9A2 /* ConnectTableViewCell.swift */,
-				A7AD9699340181BED9F17F1D /* SelectorValueView.swift */,
+				A7AD9D2C31BA086FD4323DFA /* DeviceViewModel.swift */,
 				A7AD97BE74373AF19033D45E /* HorizontalModalSlideAnimator.swift */,
+				A7AD923CB113827CDA5AE505 /* PlaceholderView.swift */,
+				A7AD9C3075244ECB38A02DAA /* PopoverViewController.swift */,
+				A7AD959EFB1DD4B3A96898B4 /* PulseRingView.swift */,
+				A7AD911FCFCFB967EACE989D /* PulseVisualizationView.swift */,
+				A7AD9699340181BED9F17F1D /* SelectorValueView.swift */,
+				A7AD9206D9EBB4415E1FC488 /* SensorScanningViewModel.swift */,
+				A7AD94025FCB7F0E7454972D /* Utils.swift */,
+				A7AD9FB604FE53BB7CA57FB7 /* WelcomeBackView.swift */,
 			);
 			path = common;
 			sourceTree = "<group>";
@@ -547,8 +565,8 @@
 			);
 			name = MovesenseShowcase;
 			packageProductDependencies = (
-				5469A5F4298D67CB00557516 /* MovesenseApi */,
 				5469A5F7298D681000557516 /* MovesenseDfu */,
+				5468734229ED48DB00C58FD9 /* MovesenseVirtualApi */,
 			);
 			productName = MovesenseShowcase;
 			productReference = 4A5BD3B51DD0B816004B88A2 /* MovesenseShowcase.app */;
@@ -568,7 +586,6 @@
 			);
 			name = MovesenseShowcaseTests;
 			packageProductDependencies = (
-				545CAB192995039700B27BF4 /* MovesenseApi */,
 			);
 			productName = MovesenseShowcaseTests;
 			productReference = C198C40C212FF7C800F3A9D8 /* MovesenseShowcaseTests.xctest */;
@@ -612,7 +629,6 @@
 			);
 			mainGroup = 4A5BD3AC1DD0B816004B88A2;
 			packageReferences = (
-				5469A5F3298D67CB00557516 /* XCRemoteSwiftPackageReference "MovesenseApi-iOS" */,
 				5469A5F6298D681000557516 /* XCRemoteSwiftPackageReference "MovesenseDfu-iOS" */,
 			);
 			productRefGroup = 4A5BD3B61DD0B816004B88A2 /* Products */;
@@ -827,7 +843,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				OTHER_LDFLAGS = "";
@@ -881,7 +897,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				OTHER_LDFLAGS = "";
 				SDKROOT = iphoneos;
@@ -905,7 +921,7 @@
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = MovesenseShowcase/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -936,7 +952,7 @@
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = MovesenseShowcase/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -965,7 +981,7 @@
 				DEVELOPMENT_TEAM = FZYKWRHZD4;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				INFOPLIST_FILE = MovesenseShowcaseTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -993,7 +1009,7 @@
 				DEVELOPMENT_TEAM = FZYKWRHZD4;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				INFOPLIST_FILE = MovesenseShowcaseTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -1042,14 +1058,6 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		5469A5F3298D67CB00557516 /* XCRemoteSwiftPackageReference "MovesenseApi-iOS" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "git@github.com:mikkojeronen/MovesenseApi-iOS.git";
-			requirement = {
-				branch = main;
-				kind = branch;
-			};
-		};
 		5469A5F6298D681000557516 /* XCRemoteSwiftPackageReference "MovesenseDfu-iOS" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "git@github.com:mikkojeronen/MovesenseDfu-iOS.git";
@@ -1061,15 +1069,9 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		545CAB192995039700B27BF4 /* MovesenseApi */ = {
+		5468734229ED48DB00C58FD9 /* MovesenseVirtualApi */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 5469A5F3298D67CB00557516 /* XCRemoteSwiftPackageReference "MovesenseApi-iOS" */;
-			productName = MovesenseApi;
-		};
-		5469A5F4298D67CB00557516 /* MovesenseApi */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 5469A5F3298D67CB00557516 /* XCRemoteSwiftPackageReference "MovesenseApi-iOS" */;
-			productName = MovesenseApi;
+			productName = MovesenseVirtualApi;
 		};
 		5469A5F7298D681000557516 /* MovesenseDfu */ = {
 			isa = XCSwiftPackageProductDependency;

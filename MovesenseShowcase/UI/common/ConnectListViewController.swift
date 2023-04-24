@@ -75,6 +75,10 @@ class ConnectListViewController: UIViewController {
                                                            target: self, action: #selector(handleBackTap))
         navigationItem.leftBarButtonItem?.tintColor = UIColor.black
 
+        navigationItem.rightBarButtonItem = UIBarButtonItem(image: UIImage(named: "icon_plus"), style: .plain,
+                                                            target: self, action: #selector(handleAddVirtualDevice))
+        navigationItem.rightBarButtonItem?.tintColor = UIColor.blue
+
         // Enable swipe from left to go back
         navigationController?.interactivePopGestureRecognizer?.delegate = nil
 
@@ -128,6 +132,10 @@ class ConnectListViewController: UIViewController {
 
     @objc private func handleBackTap() {
         navigationController?.popViewController(animated: true)
+    }
+
+    @objc private func handleAddVirtualDevice() {
+        viewModel.createVirtualDevice()
     }
 
     @objc private func handleConnectTap() {

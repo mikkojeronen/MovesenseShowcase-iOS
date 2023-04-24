@@ -8,6 +8,7 @@
 
 import Foundation
 import MovesenseApi
+import MovesenseVirtualApi
 
 enum MovesenseObserverEventSensorScanning: ObserverEvent {
 
@@ -22,14 +23,13 @@ class SensorScanningViewModel: Observable {
         return Movesense.api.getDevices()
     }
 
-    private var virtualDevices: [MovesenseDevice] {
-        return []
-    }
-
+    // Observable
     internal var observations: [Observation] = [Observation]()
     private(set) var observationQueue: DispatchQueue = DispatchQueue.global()
 
+    // Self
     init() {
+        Movesense.api.initializeVirtualApi()
         Movesense.api.addObserver(self)
     }
 
@@ -74,6 +74,10 @@ class SensorScanningViewModel: Observable {
 
     func resetDevices() {
         Movesense.api.resetScan()
+    }
+
+    func createVirtualDevice() {
+        Movesense.api.createVirtualDevice()
     }
 }
 
