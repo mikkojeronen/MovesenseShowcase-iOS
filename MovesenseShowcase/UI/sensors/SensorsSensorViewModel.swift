@@ -97,6 +97,7 @@ class SensorsSensorViewModel: Observable {
     }
 
     func updateState(_ viewModel: DeviceViewModel) {
+        NSLog("updateState \(viewModel.serial): \(deviceViewModel.state) -> \(viewModel.state)")
         deviceViewModel = viewModel
 
         if deviceViewModel.state == .connected {
