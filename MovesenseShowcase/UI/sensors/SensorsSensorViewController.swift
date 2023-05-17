@@ -174,6 +174,7 @@ class SensorsSensorViewController: UIViewController {
     }
 
     private func updateVisualState() {
+        NSLog("updateVisualState \(viewModel.sensorSerial): \(viewModel.sensorState)")
         actionLabel.text = viewModel.stateActionName
 
         switch viewModel.sensorState {
@@ -203,7 +204,7 @@ class SensorsSensorViewController: UIViewController {
             self.sensorDisconnectedImageView.alpha = 1.0
         }
 
-        self.actionStackView.arrangedSubviews.forEach { $0.isHidden = true }
+        actionStackView.arrangedSubviews.forEach { $0.isHidden = true }
     }
 
     private func visualStateDiscovered() {
@@ -224,6 +225,8 @@ class SensorsSensorViewController: UIViewController {
             self.sensorConnectedImageView.alpha = 0.0
             self.sensorDisconnectedImageView.alpha = 1.0
         }
+
+        actionStackView.arrangedSubviews.forEach { $0.isHidden = true }
     }
 
     private func visualStateConnecting() {
@@ -237,6 +240,8 @@ class SensorsSensorViewController: UIViewController {
 
         forgetButton.isHidden = true
         actionLabel.isEnabled = true
+
+        actionStackView.arrangedSubviews.forEach { $0.isHidden = true }
     }
 
     private func visualStateConnected() {
