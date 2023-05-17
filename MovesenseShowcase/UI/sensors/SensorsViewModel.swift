@@ -28,9 +28,12 @@ class SensorsViewModel: Observable {
     private(set) var observationQueue: DispatchQueue = DispatchQueue.global()
 
     init() {
+        Movesense.api.initializeVirtualApi()
+
         previousSensors = Settings.previousSensors.map { SensorsSensorViewModel(DeviceViewModel($0, newState: .disconnected)) }
         previousSensors.forEach {
             $0.delegate = self
+            Movesense.api.createPreviousVirtualDevice(localName: $0.sensorName, serialNumber: $0.sensorSerial)
         }
 
         Movesense.api.addObserver(self)
