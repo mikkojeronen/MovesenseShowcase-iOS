@@ -124,7 +124,7 @@ class RecorderFileJson {
         }
 
         let parameters = operation.operationRequest.parameters?.reduce(into: [:]) { result, parameter in
-            result[parameter.name] = parameter.value
+            result[parameter.name] = parameter.valueWithUnit
         }
 
         let header = RecorderFile(uuid: UUID(),
