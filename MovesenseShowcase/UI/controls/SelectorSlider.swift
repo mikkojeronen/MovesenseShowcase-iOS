@@ -29,6 +29,7 @@ class SelectorSlider: UISlider {
         addTarget(self, action: #selector(sliderUpdate(sender:)), for: .touchUpInside)
 
         isContinuous = false
+        isHidden = values.count == 0
 
         markersStackView.axis = .horizontal
         markersStackView.distribution = .equalSpacing

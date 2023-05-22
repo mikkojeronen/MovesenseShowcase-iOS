@@ -2,6 +2,7 @@
 // SelectorValueView.swift
 // MovesenseShowcase
 //
+// Copyright (c) 2023 Canned Bit Ltd. All rights reserved.
 // Copyright (c) 2019 Suunto. All rights reserved.
 //
 
@@ -15,7 +16,11 @@ class SelectorValueView: UIView {
 
     var value: NSNumber? {
         didSet {
-            guard let stringValue = value?.stringValue else { return }
+            guard let stringValue = value?.stringValue else {
+                isHidden = true
+                return
+            }
+            isHidden = false
             valueLabel.text = stringValue + " " + (valueUnit ?? "")
         }
     }
@@ -25,6 +30,8 @@ class SelectorValueView: UIView {
         self.valueLabel = UILabel(with: UIFont.systemFont(ofSize: 17), inColor: .black, lines: 1)
         self.valueUnit = unit
         super.init(frame: CGRect.zero)
+
+        isHidden = true
 
         layoutView()
     }
