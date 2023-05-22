@@ -2,6 +2,7 @@
 // DashboardContainerViewModelAcc.swift
 // MovesenseShowcase
 //
+// Copyright (c) 2023 Canned Bit Ltd. All rights reserved.
 // Copyright (c) 2019 Suunto. All rights reserved.
 //
 
@@ -37,7 +38,7 @@ class DashboardContainerViewModelAcc: DashboardContainerViewModel {
         }
 
         if previousTimestamp == 0 || previousTimestamp > accData.timestamp {
-            NSLog("DashboardContainerViewModelAcc::receivedEvent invalid timestamp, resetting.")
+            NSLog("DashboardContainerViewModelAcc::receivedEvent invalid timestamp, resetting timestamp.")
             previousTimestamp = accData.timestamp
             return
         }

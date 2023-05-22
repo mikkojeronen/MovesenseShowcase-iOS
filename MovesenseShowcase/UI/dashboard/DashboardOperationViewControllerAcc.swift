@@ -2,6 +2,7 @@
 // DashboardOperationViewControllerAcc.swift
 // MovesenseShowcase
 //
+// Copyright (c) 2023 Canned Bit Ltd. All rights reserved.
 // Copyright (c) 2018 Suunto. All rights reserved.
 //
 
@@ -408,7 +409,9 @@ extension DashboardOperationViewControllerAcc: Observer {
         }
     }
 
-    func selectModeUpdate(_ update: Bool, enabled: Bool) {}
+    func selectModeUpdate(_ update: Bool, enabled: Bool) { }
 
-    func onError(_ error: String) {}
+    func onError(_ error: String) {
+        NSLog("DashboardOperationViewControllerAcc::onError: \(error)")
+    }
 }
