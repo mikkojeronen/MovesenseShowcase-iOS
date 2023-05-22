@@ -33,7 +33,9 @@ class DashboardFactory {
 
     static func createOperationViewController(viewModel: DashboardContainerViewModel) -> UIViewController? {
         switch viewModel.resource {
-        case .acc: return DashboardOperationViewControllerAcc(viewModel: viewModel)
+        case .acc:
+            guard let viewModel = viewModel as? DashboardContainerViewModelAcc else { return nil }
+            return DashboardOperationViewControllerAcc(viewModel: viewModel)
         case .ecg: return DashboardOperationViewControllerEcg(viewModel: viewModel)
         case .gyro: return DashboardOperationViewControllerGyro(viewModel: viewModel)
         case .heartRate: return DashboardOperationViewControllerHr(viewModel: viewModel)

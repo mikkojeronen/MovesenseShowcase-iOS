@@ -11,7 +11,7 @@ import MovesenseApi
 
 class DashboardOperationViewControllerAcc: UIViewController {
 
-    private let viewModel: DashboardContainerViewModel
+    private let viewModel: DashboardContainerViewModelAcc
 
     private let secondsToPlot: Int = 5
     private let scaleView: DashboardPlotterScaleView = DashboardPlotterScaleView(scaleStep: 10, scaleRange: -160...160)
@@ -51,7 +51,7 @@ class DashboardOperationViewControllerAcc: UIViewController {
         fatalError("init(coder:) has not been implemented")
     }
 
-    init(viewModel: DashboardContainerViewModel) {
+    init(viewModel: DashboardContainerViewModelAcc) {
         let plotColors = [UIColor(red: 238 / 255, green: 38 / 255, blue: 170 / 255, alpha: 1.0),
                           UIColor(red: 109 / 255, green: 77 / 255, blue: 238 / 255, alpha: 1.0),
                           UIColor(red: 254 / 255, green: 194 / 255, blue: 57 / 255, alpha: 1.0)]
@@ -59,12 +59,10 @@ class DashboardOperationViewControllerAcc: UIViewController {
         self.plotColors = plotColors
         self.valuesView = DashboardValuesView(xColor: plotColors[0], yColor: plotColors[1], zColor: plotColors[2])
 
-        // TODO: Get values from the viewmodel
-        self.sampleRateSelector = SelectorSlider(values: [13, 26, 52, 104, 208, 416, 833, 1666])
+        self.sampleRateSelector = SelectorSlider(values: viewModel.accInfo.sampleRates.map { $0 as NSNumber })
         self.sampleRateValueView = SelectorValueView(name: NSLocalizedString("Rate", comment: ""),
                                                      unit: "Hz")
-        // TODO: Get values from the viewmodel
-        self.gRateSelector = SelectorSlider(values: [2, 4, 8, 16])
+        self.gRateSelector = SelectorSlider(values: viewModel.accInfo.ranges.map { $0 as NSNumber })
         self.gRateValueView = SelectorValueView(name: NSLocalizedString("G-Range", comment: ""),
                                                 unit: "G")
         self.viewModel = viewModel
@@ -100,8 +98,8 @@ class DashboardOperationViewControllerAcc: UIViewController {
                                        name: UIApplication.didBecomeActiveNotification, object: nil)
 
         if viewModel.isOperation == false {
-            sampleRateSelector.selectValue(index: 2)
-            gRateSelector.selectValue(index: 2)
+            sampleRateSelector.selectValue(index: 0)
+            gRateSelector.selectValue(index: 0)
         }
 
         viewModel.addObserver(self)

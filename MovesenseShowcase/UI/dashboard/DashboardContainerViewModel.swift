@@ -104,7 +104,9 @@ class DashboardContainerViewModel: Observable, Observer {
                                            movesenseResource.requestParameter(index)
                                        })
 
-        _ = movesenseDevice.sendRequest(request, observer: self)
+        movesenseDevice.sendRequest(request) { [weak self] operation in
+            self?.handleEvent(operation)
+        }
     }
 
     func resourceParameters(resource: DashboardResource) -> [DashboardParameter] {

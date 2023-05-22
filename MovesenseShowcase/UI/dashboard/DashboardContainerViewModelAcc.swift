@@ -19,15 +19,27 @@ class DashboardContainerViewModelAcc: DashboardContainerViewModel {
 
     private var previousTimestamp: UInt32 = 0
 
+    var accInfo: MovesenseAccInfo = MovesenseAccInfo(sampleRates: [], ranges: [])
+
+    override init(name: String, device: MovesenseDevice, resource: MovesenseResource) {
+        super.init(name: name, device: device, resource: resource)
+        requestSend(resource: .accInfo, method: .get, parameterIndices: [])
+    }
+
     override func handleEvent(_ event: ObserverEvent) {
         guard let event = event as? MovesenseObserverEventOperation else { return }
 
         switch event {
-        case .operationResponse: return
+        case .operationResponse(let response): operationResponse(response)
         case .operationFinished: return
         case .operationEvent(let event): self.receivedEvent(event)
         case .operationError(let error): self.onOperationError(error)
         }
+    }
+
+    func operationResponse(_ response: MovesenseResponse) {
+        guard case let MovesenseResponse.accInfo(_, _, info) = response else { return }
+        self.accInfo = info
     }
 
     func receivedEvent(_ event: MovesenseEvent) {
