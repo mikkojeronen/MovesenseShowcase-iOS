@@ -2,6 +2,7 @@
 // SelectorSlider.swift
 // MovesenseShowcase
 //
+// Copyright (c) 2023 Canned Bit Ltd. All rights reserved.
 // Copyright (c) 2019 Suunto. All rights reserved.
 //
 
@@ -83,11 +84,14 @@ class SelectorSlider: UISlider {
     func selectValue(index: Int) {
         guard selectableValues.count > 0 else { return }
 
-        let normalizedValues = selectableValues.enumerated()
-            .map { Float($0.offset) / Float(selectableValues.count - 1) }
+        // Calculate slider positions with special case for just one value
+        // when the only position is in the center
+        let count = selectableValues.count
+        let sliderPositions = count == 1 ? [0.5] : selectableValues.enumerated()
+                                                    .map { Float($0.offset) / Float(count - 1) }
 
-        if let normalizedValue = normalizedValues[safe: index] {
-            value = normalizedValue
+        if let sliderPosition = sliderPositions[safe: index] {
+            value = sliderPosition
             sliderUpdate(sender: self)
         }
     }
@@ -137,39 +141,38 @@ class SelectorSlider: UISlider {
 
     @objc private func sliderUpdate(sender: UIControl) {
         guard let sliderValue: Float = (sender as? SelectorSlider)?.value,
-              selectableValues.count > 1,
+              selectableValues.count > 0,
               markersStackView.arrangedSubviews.count == selectableValues.count else { return }
 
-        let normalizedValues: [Float] = selectableValues.enumerated()
-            .map { Float($0.offset) / Float(selectableValues.count - 1) }
+        // Calculate slider positions with special case for just one value
+        // when the only position is in the center
+        let count = selectableValues.count
+        let sliderPositions = count == 1 ? [0.5] : selectableValues.enumerated()
+                                                    .map { Float($0.offset) / Float(count - 1) }
 
-        value = normalizedValues.reduce(Float(0.0)) { (result: Float, element: Float) in
+        // Get the nearest possible slider position and snap the slider there
+        value = sliderPositions.reduce(Float(count == 1 ? 0.5 : 0.0)) { (result: Float, element: Float) in
             abs(element - sliderValue) < abs(result - sliderValue) ? element : result
         }
 
         // Configure markers
-        selectableValues.enumerated().forEach { (index, _) in
+        selectableValues.enumerated().forEach { (index, selectableValue) in
             guard let views = markersStackView.arrangedSubviews[safe: index]?.subviews,
                   let marker: UIImageView = (views.first { $0 is UIImageView }) as? UIImageView,
                   let label: UILabel = (views.first { $0 is UILabel }) as? UILabel else { return }
 
-            let relativePosition = Float(index) / Float(selectableValues.count - 1)
-
-            if value == relativePosition {
+            let sliderPosition = sliderPositions[index]
+            if value == sliderPosition {
                 label.textColor = .black
                 marker.isHighlighted = true
-            } else if value > relativePosition {
+                delegate?.valueSelected(sender: self, value: selectableValue)
+            } else if value > sliderPosition {
                 label.textColor = .gray
                 marker.isHighlighted = true
             } else {
                 label.textColor = .gray
                 marker.isHighlighted = false
             }
-        }
-
-        let divider = Float(selectableValues.count - 1)
-        if let (_, selectedValue) = (selectableValues.enumerated().first { Float($0.offset) / divider >= value }) {
-            delegate?.valueSelected(sender: self, value: selectedValue)
         }
     }
 
